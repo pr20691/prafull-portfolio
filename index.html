@@ -8,21 +8,23 @@
 <meta name="keywords" content="Prafull Ranjan, Backend Software Engineer, System Analyst, Java Developer, Spring Framework, Oracle SOA Suite, Application Support, SkillNet Solutions, Retail Systems Engineer">
 <meta name="author" content="Prafull Ranjan">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://prafullranjan.dev/">
+<!-- IMPORTANT: replace this with your real hosted URL once deployed (see instructions) -->
+<link rel="canonical" href="https://pr20691.github.io/prafull-portfolio/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%BB%3C/text%3E%3C/svg%3E">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Prafull Ranjan — Backend Software Engineer & Systems Analyst">
 <meta property="og:description" content="8+ years building and supporting production backend systems for global retail brands. Java · Spring · Oracle · Oracle SOA Suite · Automation.">
-<meta property="og:url" content="https://prafullranjan.dev/">
+<meta property="og:url" content="https://pr20691.github.io/prafull-portfolio/">
 <meta property="og:site_name" content="Prafull Ranjan — Portfolio">
-<meta property="og:image" content="https://prafullranjan.dev/og-image.png">
+<meta property="og:image" content="https://pr20691.github.io/prafull-portfolio/og-image.png">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Prafull Ranjan — Backend Software Engineer & Systems Analyst">
 <meta name="twitter:description" content="8+ years building and supporting production backend systems for global retail brands. Java · Spring · Oracle · Oracle SOA Suite · Automation.">
-<meta name="twitter:image" content="https://prafullranjan.dev/og-image.png">
+<meta name="twitter:image" content="https://pr20691.github.io/prafull-portfolio/og-image.png">
 
 <!-- JSON-LD -->
 <script type="application/ld+json">
@@ -35,7 +37,7 @@
     "@type": "Organization",
     "name": "SkillNet Solutions, Inc."
   },
-  "url": "https://prafullranjan.dev/",
+  "url": "https://pr20691.github.io/prafull-portfolio/",
   "sameAs": [
     "https://www.linkedin.com/in/prafull-ranjan/"
   ],
@@ -1277,19 +1279,17 @@ footer .container{ display:flex; align-items:center; justify-content: space-betw
     typeTick();
   }
 
-  /* ---- Active nav link on scroll ---- */
+  /* ---- Active nav link on scroll (fixed: only one link highlighted at a time) ---- */
   var sections = document.querySelectorAll('main section[id]');
   var navAs = document.querySelectorAll('.nav-links a');
   if ('IntersectionObserver' in window) {
     var navIo = new IntersectionObserver(function(entries){
       entries.forEach(function(entry){
+        if (!entry.isIntersecting) return;
         var id = entry.target.getAttribute('id');
-        var link = document.querySelector('.nav-links a[href="#' + id + '"]');
-        if (!link) return;
-        if (entry.isIntersecting) {
-          navAs.forEach(function(a){ a.style.color = ''; });
-          link.style.color = 'var(--ink)';
-        }
+        navAs.forEach(function(a){
+          a.style.color = (a.getAttribute('href') === '#' + id) ? 'var(--ink)' : '';
+        });
       });
     }, { threshold: 0.4 });
     sections.forEach(function(s){ navIo.observe(s); });
