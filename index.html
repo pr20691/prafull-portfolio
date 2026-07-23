@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prafull Ranjan — Backend Software Engineer &amp; Systems Analyst</title>
+<meta name="description" content="Prafull Ranjan is a backend software engineer with 8+ years at SkillNet Solutions, building and supporting production systems for global retail brands including Estée Lauder Companies, Sally Beauty Holdings, Charlotte Tilbury, Blick Art Materials and West Marine. Java, Spring, Oracle, Oracle SOA Suite, automation.">
+<meta name="keywords" content="Prafull Ranjan, Backend Software Engineer, System Analyst, Java Developer, Spring Framework, Oracle SOA Suite, Application Support, SkillNet Solutions, Retail Systems Engineer">
+<meta name="author" content="Prafull Ranjan">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://prafullranjan.dev/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Prafull Ranjan — Backend Software Engineer & Systems Analyst">
+<meta property="og:description" content="8+ years building and supporting production backend systems for global retail brands. Java · Spring · Oracle · Oracle SOA Suite · Automation.">
+<meta property="og:url" content="https://prafullranjan.dev/">
+<meta property="og:site_name" content="Prafull Ranjan — Portfolio">
+<meta property="og:image" content="https://prafullranjan.dev/og-image.png">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Prafull Ranjan — Backend Software Engineer & Systems Analyst">
+<meta name="twitter:description" content="8+ years building and supporting production backend systems for global retail brands. Java · Spring · Oracle · Oracle SOA Suite · Automation.">
+<meta name="twitter:image" content="https://prafullranjan.dev/og-image.png">
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Prafull Ranjan",
+  "jobTitle": "Software Engineer / System Analyst",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "SkillNet Solutions, Inc."
+  },
+  "url": "https://prafullranjan.dev/",
+  "sameAs": [
+    "https://www.linkedin.com/in/prafull-ranjan/"
+  ],
+  "knowsAbout": [
+    "Java", "Spring Framework", "Oracle 12c", "SQL", "Oracle SOA Suite",
+    "Application Support", "REST APIs", "OAuth 2.0", "CI/CD", "Python"
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   0. RESET & TOKENS
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
+
+:root{
+  --ink: #0B1220;
+  --ink-soft: #1B2434;
+  --paper: #F5F6F8;
+  --paper-raised: #FFFFFF;
+  --line: rgba(11,18,32,0.10);
+  --line-strong: rgba(11,18,32,0.18);
+  --muted: #5B6472;
+  --signal: #2251E8;
+  --signal-ink: #16326B;
+  --signal-dim: rgba(34,81,232,0.09);
+  --live: #16A34A;
+  --live-dim: rgba(22,163,74,0.12);
+  --mono-bg: #ECEEF3;
+  --shadow-sm: 0 1px 2px rgba(11,18,32,0.06);
+  --shadow-md: 0 8px 24px rgba(11,18,32,0.08);
+  --shadow-lg: 0 24px 60px rgba(11,18,32,0.14);
+  --radius-s: 8px;
+  --radius-m: 14px;
+  --radius-l: 22px;
+  --font-display: 'Space Grotesk', 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  color-scheme: light;
+}
+
+html[data-theme="dark"]{
+  --ink: #F2F4F8;
+  --ink-soft: #D7DCE5;
+  --paper: #090D16;
+  --paper-raised: #101625;
+  --line: rgba(242,244,248,0.10);
+  --line-strong: rgba(242,244,248,0.20);
+  --muted: #96A0B2;
+  --signal: #6C93FF;
+  --signal-ink: #CBD9FF;
+  --signal-dim: rgba(108,147,255,0.14);
+  --live: #35D07F;
+  --live-dim: rgba(53,208,127,0.14);
+  --mono-bg: #161D2E;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.4);
+  --shadow-md: 0 8px 24px rgba(0,0,0,0.45);
+  --shadow-lg: 0 24px 70px rgba(0,0,0,0.55);
+  color-scheme: dark;
+}
+
+body{
+  font-family: var(--font-body);
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  transition: background .35s ease, color .35s ease;
+  overflow-x: hidden;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+button { font: inherit; color: inherit; background: none; border: none; cursor: pointer; }
+section { position: relative; }
+
+.container{ width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 28px; }
+.eyebrow{
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--signal);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+.section-head{ max-width: 640px; margin-bottom: 48px; }
+.section-head h2{
+  font-family: var(--font-display);
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-top: 10px;
+  color: var(--ink);
+}
+.section-head p{ color: var(--muted); font-size: 16px; margin-top: 12px; }
+
+/* focus visibility */
+a:focus-visible, button:focus-visible, input:focus-visible{
+  outline: 2px solid var(--signal);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.skip-link{
+  position: absolute; left: -999px; top: 0;
+  background: var(--signal); color: #fff; padding: 12px 18px;
+  border-radius: 0 0 8px 0; z-index: 999; font-weight: 600; font-size: 14px;
+}
+.skip-link:focus{ left: 0; }
+
+/* ============================================================
+   1. STATUS BAR / NAV
+   ============================================================ */
+#progress-bar{
+  position: fixed; top:0; left:0; height: 3px; width: 0%;
+  background: linear-gradient(90deg, var(--signal), var(--live));
+  z-index: 1000; transition: width .1s linear;
+}
+
+.navbar{
+  position: fixed; top: 0; left: 0; right: 0; z-index: 900;
+  border-bottom: 1px solid var(--line);
+  background: color-mix(in srgb, var(--paper) 82%, transparent);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+}
+.navbar .container{
+  display: flex; align-items: center; justify-content: space-between;
+  height: 66px;
+}
+.brand{
+  display: flex; align-items: center; gap: 10px;
+  font-family: var(--font-display); font-weight: 600; font-size: 16px;
+}
+.brand .dot{
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--live);
+  box-shadow: 0 0 0 3px var(--live-dim);
+  animation: pulse 2.4s ease-in-out infinite;
+}
+@keyframes pulse{
+  0%,100%{ box-shadow: 0 0 0 3px var(--live-dim); }
+  50%{ box-shadow: 0 0 0 6px transparent; }
+}
+.nav-links{ display: flex; align-items: center; gap: 30px; }
+.nav-links a{
+  font-size: 14.5px; font-weight: 500; color: var(--muted);
+  position: relative; padding: 4px 0;
+  transition: color .2s ease;
+}
+.nav-links a::after{
+  content:''; position:absolute; left:0; bottom:-2px; height: 1px; width:0;
+  background: var(--signal); transition: width .25s ease;
+}
+.nav-links a:hover{ color: var(--ink); }
+.nav-links a:hover::after{ width: 100%; }
+
+.nav-actions{ display: flex; align-items: center; gap: 12px; }
+.theme-toggle{
+  width: 38px; height: 38px; border-radius: 50%;
+  border: 1px solid var(--line-strong);
+  display: flex; align-items: center; justify-content: center;
+  transition: border-color .2s ease, transform .2s ease;
+}
+.theme-toggle:hover{ transform: rotate(15deg); border-color: var(--signal); }
+.theme-toggle svg{ width: 18px; height: 18px; stroke: var(--ink); }
+
+.btn{
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 11px 20px; border-radius: 999px;
+  font-size: 14px; font-weight: 600;
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease, border-color .2s ease;
+  white-space: nowrap;
+}
+.btn-primary{ background: var(--signal); color: #fff; box-shadow: var(--shadow-sm); }
+.btn-primary:hover{ transform: translateY(-2px); box-shadow: 0 12px 24px rgba(34,81,232,.30); }
+.btn-ghost{ border: 1px solid var(--line-strong); color: var(--ink); }
+.btn-ghost:hover{ border-color: var(--signal); color: var(--signal); transform: translateY(-2px); }
+
+.nav-toggle{ display:none; }
+
+/* ============================================================
+   2. HERO
+   ============================================================ */
+.hero{
+  padding: 168px 0 110px;
+  position: relative;
+  overflow: hidden;
+}
+.hero-grid{
+  position: absolute; inset: 0; z-index: 0;
+  background-image:
+    linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse 65% 55% at 60% 20%, black 20%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse 65% 55% at 60% 20%, black 20%, transparent 75%);
+  animation: drift 30s linear infinite;
+}
+@keyframes drift{ from{ background-position: 0 0, 0 0; } to{ background-position: 56px 56px, 56px 56px; } }
+.hero-glow{
+  position: absolute; top: -180px; right: -160px; width: 620px; height: 620px;
+  background: radial-gradient(circle, var(--signal-dim) 0%, transparent 70%);
+  z-index: 0; pointer-events: none;
+}
+
+.hero .container{ position: relative; z-index: 1; }
+.hero-inner{ max-width: 760px; }
+.hero-status{
+  display:inline-flex; align-items:center; gap:10px;
+  font-family: var(--font-mono); font-size: 12.5px; letter-spacing:.06em;
+  color: var(--muted); text-transform: uppercase;
+  border: 1px solid var(--line-strong); border-radius: 999px;
+  padding: 7px 14px 7px 10px; margin-bottom: 26px;
+  background: var(--paper-raised);
+}
+.hero-status .dot{ width:7px; height:7px; border-radius:50%; background: var(--live); box-shadow: 0 0 0 3px var(--live-dim); }
+
+.hero h1{
+  font-family: var(--font-display);
+  font-size: clamp(42px, 6.4vw, 78px);
+  line-height: 0.98; letter-spacing: -0.03em; font-weight: 700;
+  color: var(--ink);
+}
+.hero-role{
+  margin-top: 18px; height: 30px; overflow: hidden;
+}
+.hero-role span{
+  font-family: var(--font-mono); font-size: 17px; color: var(--signal); font-weight: 500;
+}
+.hero-role .cursor{ display:inline-block; width: 8px; height: 18px; background: var(--signal); margin-left: 2px; vertical-align: -3px; animation: blink 1s step-end infinite; }
+@keyframes blink{ 50%{ opacity: 0; } }
+
+.hero p.lede{
+  margin-top: 26px; font-size: 18px; line-height: 1.75; color: var(--muted); max-width: 620px;
+}
+.hero-ctas{ display: flex; flex-wrap: wrap; gap: 14px; margin-top: 38px; }
+
+.hero-meta{
+  margin-top: 64px; display: grid; grid-template-columns: repeat(4, auto); gap: 40px;
+}
+.hero-meta div{ border-left: 2px solid var(--line-strong); padding-left: 14px; }
+.hero-meta .num{ font-family: var(--font-display); font-size: 28px; font-weight: 700; }
+.hero-meta .label{ font-family: var(--font-mono); font-size: 11.5px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; margin-top: 4px; }
+
+/* ============================================================
+   3. REVEAL
+   ============================================================ */
+.reveal{ opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.in{ opacity: 1; transform: translateY(0); }
+.reveal-stagger.in > *{ transition-delay: calc(var(--i, 0) * 90ms); }
+
+/* ============================================================
+   4. ABOUT
+   ============================================================ */
+.about{ padding: 120px 0; border-top: 1px solid var(--line); }
+.about-grid{ display: grid; grid-template-columns: 1.3fr 1fr; gap: 64px; align-items: start; }
+.about-copy p{ color: var(--ink-soft); font-size: 16.5px; line-height: 1.85; margin-bottom: 18px; }
+.about-copy strong{ color: var(--ink); font-weight: 600; }
+
+.panel{
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-l);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+.panel-head{
+  display:flex; align-items:center; justify-content: space-between;
+  padding: 16px 20px; border-bottom: 1px solid var(--line);
+  font-family: var(--font-mono); font-size: 11.5px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;
+}
+.panel-head .dots{ display:flex; gap:6px; }
+.panel-head .dots span{ width:8px; height:8px; border-radius:50%; background: var(--line-strong); }
+.panel-body{ padding: 22px 22px 24px; }
+.kv{ display:flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px dashed var(--line); font-size: 14.5px; }
+.kv:last-child{ border-bottom: none; }
+.kv .k{ color: var(--muted); }
+.kv .v{ font-weight: 600; text-align:right; }
+.kv .v.tag{
+  font-family: var(--font-mono); font-size: 12px; background: var(--live-dim); color: var(--live);
+  padding: 3px 9px; border-radius: 999px; font-weight: 600;
+}
+
+/* ============================================================
+   5. EXPERIENCE TIMELINE
+   ============================================================ */
+.experience{ padding: 120px 0; border-top: 1px solid var(--line); background: var(--paper); }
+.timeline{ position: relative; margin-top: 20px; }
+.timeline::before{
+  content:''; position:absolute; left: 11px; top: 10px; bottom: 10px; width: 2px;
+  background: linear-gradient(var(--line-strong), transparent 95%);
+}
+.tl-item{ position: relative; padding: 0 0 44px 46px; }
+.tl-item:last-child{ padding-bottom: 0; }
+.tl-dot{
+  position: absolute; left: 0; top: 4px; width: 24px; height: 24px; border-radius: 50%;
+  background: var(--paper-raised); border: 2px solid var(--line-strong);
+  display:flex; align-items:center; justify-content:center;
+}
+.tl-item.active .tl-dot{ border-color: var(--live); }
+.tl-dot i{ width: 8px; height: 8px; border-radius: 50%; background: var(--muted); }
+.tl-item.active .tl-dot i{ background: var(--live); box-shadow: 0 0 0 3px var(--live-dim); }
+
+.tl-card{
+  background: var(--paper-raised); border: 1px solid var(--line); border-radius: var(--radius-m);
+  padding: 24px 26px; box-shadow: var(--shadow-sm);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.tl-card:hover{ transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: var(--line-strong); }
+.tl-top{ display:flex; flex-wrap: wrap; align-items:flex-start; justify-content: space-between; gap: 10px; margin-bottom: 10px; }
+.tl-top h3{ font-family: var(--font-display); font-size: 19px; font-weight: 600; }
+.tl-status{
+  font-family: var(--font-mono); font-size: 11px; letter-spacing:.05em; text-transform: uppercase;
+  padding: 4px 10px; border-radius: 999px; font-weight: 600; white-space: nowrap;
+}
+.tl-status.active{ background: var(--live-dim); color: var(--live); }
+.tl-status.archived{ background: var(--mono-bg); color: var(--muted); }
+.tl-dates{ font-family: var(--font-mono); font-size: 12.5px; color: var(--muted); margin-bottom: 12px; }
+.tl-card p{ color: var(--ink-soft); font-size: 15px; line-height: 1.75; }
+.tl-tags{ display:flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.tag{
+  font-family: var(--font-mono); font-size: 11.5px; background: var(--signal-dim); color: var(--signal);
+  padding: 5px 11px; border-radius: 6px; font-weight: 500;
+}
+
+/* ============================================================
+   6. FEATURED PROJECT
+   ============================================================ */
+.featured{ padding: 120px 0; border-top: 1px solid var(--line); }
+.feature-card{
+  background: linear-gradient(155deg, var(--signal-ink) 0%, var(--ink) 60%);
+  border-radius: var(--radius-l);
+  padding: 56px 52px;
+  color: #EAF0FF;
+  position: relative; overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+html[data-theme="dark"] .feature-card{ background: linear-gradient(155deg, #0F1E4A 0%, #0A0F1C 65%); }
+.feature-card::before{
+  content:''; position:absolute; inset:0;
+  background-image: radial-gradient(circle at 85% 10%, rgba(108,147,255,.35), transparent 45%);
+}
+.feature-inner{ position: relative; z-index:1; }
+.feature-top{ display:flex; align-items:center; gap:12px; flex-wrap: wrap; margin-bottom: 18px;}
+.badge{
+  font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing:.05em;
+  background: rgba(255,255,255,.10); border: 1px solid rgba(255,255,255,.18);
+  padding: 6px 12px; border-radius: 999px; color: #DCE6FF;
+}
+.feature-card h3{ font-family: var(--font-display); font-size: clamp(24px,3vw,32px); font-weight: 600; margin-bottom: 16px; letter-spacing: -0.01em; }
+.feature-card > .feature-inner > p.desc{ color: #C7D3F5; font-size: 16px; line-height: 1.8; max-width: 680px; margin-bottom: 30px; }
+
+.feature-list{ display: grid; grid-template-columns: 1fr 1fr; gap: 16px 28px; margin-bottom: 34px; }
+.feature-list li{ display:flex; gap: 12px; font-size: 14.5px; line-height: 1.7; color: #D8E1FA; }
+.feature-list li b{ color: #fff; }
+.feature-list li .ico{ flex: none; width: 20px; height: 20px; margin-top: 2px; }
+.feature-list li .ico svg{ width:100%; height:100%; stroke: #7FA0FF; }
+
+.feature-footnote{ font-size: 13.5px; color: #A9B7E5; font-style: italic; border-top: 1px solid rgba(255,255,255,.14); padding-top: 20px; }
+
+/* diagram wrap inside dark feature card */
+.diagram-wrap{
+  margin: 8px 0 34px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.12);
+  border-radius: var(--radius-m); padding: 22px 18px; overflow-x: auto;
+}
+.diagram-wrap svg{ display:block; margin: 0 auto; min-width: 640px; }
+
+/* ============================================================
+   7. ARCHITECTURE (light panel diagram)
+   ============================================================ */
+.architecture{ padding: 120px 0; border-top: 1px solid var(--line); }
+.arch-card{
+  background: var(--paper-raised); border: 1px solid var(--line); border-radius: var(--radius-l);
+  box-shadow: var(--shadow-md); overflow: hidden;
+}
+.arch-head{ padding: 26px 30px; border-bottom: 1px solid var(--line); display:flex; justify-content: space-between; align-items:center; flex-wrap: wrap; gap: 10px;}
+.arch-head h3{ font-family: var(--font-display); font-size: 20px; font-weight: 600; }
+.arch-body{ padding: 30px; }
+.arch-diagram-scroll{ overflow-x: auto; padding-bottom: 6px; }
+.arch-diagram-scroll svg{ display:block; min-width: 760px; margin: 0 auto 28px; }
+.arch-steps{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 10px; }
+.arch-step{ border: 1px solid var(--line); border-radius: var(--radius-s); padding: 16px 18px; }
+.arch-step .idx{ font-family: var(--font-mono); font-size: 11.5px; color: var(--signal); font-weight: 600; }
+.arch-step h4{ font-family: var(--font-display); font-size: 15px; margin: 6px 0 6px; font-weight: 600; }
+.arch-step p{ font-size: 13.5px; color: var(--muted); line-height: 1.6; }
+
+/* svg theme classes */
+.svg-node-rect{ fill: var(--paper-raised); stroke: var(--line-strong); stroke-width: 1.5; }
+.svg-node-rect.accent{ fill: var(--signal-dim); stroke: var(--signal); }
+.svg-node-text{ fill: var(--ink); font-family: 'Inter', sans-serif; font-weight: 600; }
+.svg-node-sub{ fill: var(--muted); font-family: 'JetBrains Mono', monospace; }
+.svg-line{ stroke: var(--line-strong); stroke-width: 1.5; fill: none; }
+.svg-line.accent{ stroke: var(--signal); }
+.svg-arrow{ fill: var(--line-strong); }
+.svg-arrow.accent{ fill: var(--signal); }
+.svg-label-dark{ fill: #EAF0FF; font-family: 'Inter', sans-serif; font-weight: 600; }
+.svg-sub-dark{ fill: #A9B7E5; font-family: 'JetBrains Mono', monospace; }
+.svg-node-dark{ fill: rgba(255,255,255,.06); stroke: rgba(255,255,255,.25); stroke-width: 1.5; }
+.svg-node-dark.accent{ fill: rgba(108,147,255,.18); stroke: #7FA0FF; }
+.svg-line-dark{ stroke: rgba(255,255,255,.28); stroke-width: 1.5; fill:none; }
+.svg-line-dark.accent{ stroke: #7FA0FF; }
+.svg-arrow-dark{ fill: rgba(255,255,255,.35); }
+.svg-arrow-dark.accent{ fill: #7FA0FF; }
+
+/* ============================================================
+   8. SKILLS
+   ============================================================ */
+.skills{ padding: 120px 0; border-top: 1px solid var(--line); }
+.skills-grid{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.skill-group{
+  border: 1px solid var(--line); border-radius: var(--radius-m); padding: 24px 22px;
+  background: var(--paper-raised); transition: border-color .2s ease, transform .2s ease;
+}
+.skill-group:hover{ border-color: var(--signal); transform: translateY(-3px); }
+.skill-group .g-head{ display:flex; align-items:center; gap: 10px; margin-bottom: 16px; }
+.skill-group .g-icon{ width: 30px; height: 30px; border-radius: 8px; background: var(--signal-dim); display:flex; align-items:center; justify-content:center; }
+.skill-group .g-icon svg{ width: 16px; height: 16px; stroke: var(--signal); }
+.skill-group h4{ font-family: var(--font-display); font-size: 15.5px; font-weight: 600; }
+.skill-chips{ display:flex; flex-wrap: wrap; gap: 8px; }
+.chip{
+  font-size: 13px; padding: 6px 12px; border-radius: 999px; background: var(--mono-bg); color: var(--ink-soft);
+  font-weight: 500; border: 1px solid transparent;
+}
+
+/* ============================================================
+   9. STATS
+   ============================================================ */
+.stats{ padding: 90px 0; border-top: 1px solid var(--line); }
+.stats-grid{ display:grid; grid-template-columns: repeat(4,1fr); gap: 24px; }
+.stat-card{ text-align:center; padding: 30px 16px; border: 1px solid var(--line); border-radius: var(--radius-m); background: var(--paper-raised); }
+.stat-card .num{ font-family: var(--font-display); font-size: 42px; font-weight: 700; color: var(--signal); letter-spacing: -0.02em; }
+.stat-card .label{ margin-top: 8px; font-size: 13.5px; color: var(--muted); font-family: var(--font-mono); text-transform: uppercase; letter-spacing:.03em; }
+
+/* ============================================================
+   10. CONTACT
+   ============================================================ */
+.contact{ padding: 130px 0 100px; border-top: 1px solid var(--line); text-align:center; }
+.contact-card{
+  max-width: 640px; margin: 0 auto; padding: 60px 40px; border-radius: var(--radius-l);
+  border: 1px solid var(--line); background: var(--paper-raised); box-shadow: var(--shadow-md);
+  position: relative; overflow: hidden;
+}
+.contact-card::before{
+  content:''; position:absolute; top:-60%; left:50%; transform: translateX(-50%);
+  width: 480px; height: 480px; background: radial-gradient(circle, var(--signal-dim), transparent 70%);
+}
+.contact-card > *{ position: relative; z-index:1; }
+.contact h2{ font-family: var(--font-display); font-size: clamp(26px,3.4vw,34px); font-weight: 600; margin: 14px 0 12px; }
+.contact p{ color: var(--muted); font-size: 15.5px; max-width: 440px; margin: 0 auto 30px; }
+.contact-ctas{ display:flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.copy-row{
+  margin-top: 26px; display:inline-flex; align-items:center; gap: 10px;
+  font-family: var(--font-mono); font-size: 13px; color: var(--muted);
+  border: 1px dashed var(--line-strong); padding: 9px 14px; border-radius: 999px;
+}
+.copy-row button{ color: var(--signal); font-weight: 600; }
+
+/* ============================================================
+   11. FOOTER
+   ============================================================ */
+footer{ border-top: 1px solid var(--line); padding: 30px 0; }
+footer .container{ display:flex; align-items:center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+.foot-status{ font-family: var(--font-mono); font-size: 12.5px; color: var(--muted); display:flex; align-items:center; gap: 8px; }
+.foot-status .dot{ width:6px; height:6px; border-radius:50%; background: var(--live); }
+.back-top{
+  width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--line-strong);
+  display:flex; align-items:center; justify-content:center; transition: transform .2s ease, border-color .2s ease;
+}
+.back-top:hover{ transform: translateY(-3px); border-color: var(--signal); }
+.back-top svg{ width: 16px; height: 16px; stroke: var(--ink); }
+
+/* ============================================================
+   12. RESPONSIVE
+   ============================================================ */
+@media (max-width: 980px){
+  .about-grid{ grid-template-columns: 1fr; }
+  .skills-grid{ grid-template-columns: repeat(2,1fr); }
+  .stats-grid{ grid-template-columns: repeat(2,1fr); }
+  .arch-steps{ grid-template-columns: 1fr 1fr; }
+  .feature-list{ grid-template-columns: 1fr; }
+}
+@media (max-width: 760px){
+  .nav-links{
+    position: fixed; top: 66px; left: 0; right: 0; bottom: 0;
+    background: var(--paper); flex-direction: column; align-items: flex-start;
+    padding: 30px 28px; gap: 22px; transform: translateX(100%);
+    transition: transform .3s ease; border-top: 1px solid var(--line);
+  }
+  .nav-links.open{ transform: translateX(0); }
+  .nav-links a{ font-size: 17px; }
+  .nav-toggle{ display:flex; width: 38px; height:38px; border-radius: 50%; border: 1px solid var(--line-strong); align-items:center; justify-content:center; }
+  .nav-toggle svg{ width: 18px; height: 18px; stroke: var(--ink); }
+  .nav-actions .btn-ghost{ display:none; }
+  .hero{ padding: 140px 0 80px; }
+  .hero-meta{ grid-template-columns: repeat(2,1fr); gap: 26px 30px; }
+  .skills-grid{ grid-template-columns: 1fr; }
+  .stats-grid{ grid-template-columns: repeat(2,1fr); }
+  .arch-steps{ grid-template-columns: 1fr; }
+  .feature-card{ padding: 36px 24px; }
+  .about, .experience, .featured, .architecture, .skills, .stats, .contact{ padding: 80px 0; }
+}
+
+/* Print */
+@media print{
+  .navbar, .theme-toggle, .back-top, #progress-bar, .hero-grid, .hero-glow{ display:none !important; }
+  body{ background:#fff; color:#000; }
+  .reveal{ opacity:1 !important; transform:none !important; }
+  a[href]::after{ content: " (" attr(href) ")"; font-size: 11px; }
+}
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<div id="progress-bar"></div>
+
+<!-- ============================ NAV ============================ -->
+<header class="navbar">
+  <div class="container">
+    <a href="#top" class="brand" aria-label="Prafull Ranjan — home">
+      <span class="dot" aria-hidden="true"></span> Prafull Ranjan
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#featured">Featured Work</a>
+      <a href="#systems">Systems</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-pressed="false" aria-label="Toggle dark mode">
+        <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+      </button>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/prafull-ranjan/" target="_blank" rel="noopener">LinkedIn</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============================ HERO ============================ -->
+<section class="hero" id="top">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <span class="hero-status"><span class="dot" aria-hidden="true"></span> STATUS: OPERATIONAL · 8+ YRS UPTIME</span>
+      <h1>Prafull Ranjan</h1>
+      <div class="hero-role" aria-live="polite"><span id="typedRole"></span><span class="cursor" aria-hidden="true"></span></div>
+      <p class="lede">
+        Backend-focused software engineer with close to eight years at SkillNet Solutions, Inc.,
+        building and supporting production systems for global retail brands — from legacy data
+        migration to Java/Spring services that keep real stores and storefronts running.
+      </p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="https://www.linkedin.com/in/prafull-ranjan/" target="_blank" rel="noopener">
+          Connect on LinkedIn
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </a>
+        <a class="btn btn-ghost" href="#experience">View Experience</a>
+        <a class="btn btn-ghost" href="#featured">See Featured Build</a>
+      </div>
+
+      <div class="hero-meta">
+        <div>
+          <div class="num"><span class="counter" data-target="8" data-suffix="+">0</span></div>
+          <div class="label">Years Experience</div>
+        </div>
+        <div>
+          <div class="num"><span class="counter" data-target="6">0</span></div>
+          <div class="label">Retail Brands</div>
+        </div>
+        <div>
+          <div class="num">L1–L3</div>
+          <div class="label">Support Tiers Owned</div>
+        </div>
+        <div>
+          <div class="num"><span class="counter" data-target="1">0</span></div>
+          <div class="label">Self-Built Pipeline</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ ABOUT ============================ -->
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div class="reveal">
+      <span class="eyebrow">// About</span>
+      <h2 style="font-family:var(--font-display); font-size:clamp(28px,4vw,38px); font-weight:600; margin:12px 0 26px; letter-spacing:-0.02em;">
+        Backend systems, kept running.
+      </h2>
+      <div class="about-copy">
+        <p>
+          I'm a backend-focused software engineer with close to eight years of experience at
+          <strong>SkillNet Solutions, Inc.</strong>, primarily working in the retail domain. Over
+          that time I've supported and built systems for international retail brands — helping
+          them migrate legacy data, keep production systems running, and deliver features
+          reliably under real business deadlines.
+        </p>
+        <p>
+          My core strength is <strong>backend development and application support</strong> —
+          writing and maintaining Java/Spring services, working with Oracle databases and SQL,
+          and providing <strong>L1/L2/L3 production support</strong>: investigating live issues,
+          reading through logs under time pressure, debugging defects, and coordinating fixes to
+          keep critical retail systems running.
+        </p>
+        <p>
+          I've also taken on work outside my usual stack when a project needed it — including
+          picking up <strong>Oracle SOA Suite</strong> for a data migration project with no prior
+          hands-on experience, and delivering it on time. Outside of client work, I build and
+          maintain personal engineering projects to keep learning new tools on my own terms.
+        </p>
+      </div>
+    </div>
+
+    <div class="reveal panel" style="transition-delay:.15s;">
+      <div class="panel-head">
+        <span>profile.status</span>
+        <div class="dots"><span></span><span></span><span></span></div>
+      </div>
+      <div class="panel-body">
+        <div class="kv"><span class="k">Role</span><span class="v">Software Engineer · System Analyst</span></div>
+        <div class="kv"><span class="k">Employer</span><span class="v">SkillNet Solutions, Inc.</span></div>
+        <div class="kv"><span class="k">Domain</span><span class="v">Retail — Backend &amp; Data</span></div>
+        <div class="kv"><span class="k">Core Stack</span><span class="v">Java · Spring · Oracle · SQL</span></div>
+        <div class="kv"><span class="k">Support Coverage</span><span class="v">L1 / L2 / L3</span></div>
+        <div class="kv"><span class="k">Current Focus</span><span class="v tag">Oracle SOA Migration</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ EXPERIENCE ============================ -->
+<section class="experience" id="experience">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">// Experience</span>
+      <h2>Client engagements at SkillNet Solutions</h2>
+      <p>One continuous employer, six retail-brand engagements — spanning data migration, backend
+        development, and production support.</p>
+    </div>
+
+    <div class="timeline">
+
+      <div class="tl-item active reveal">
+        <div class="tl-dot" aria-hidden="true"><i></i></div>
+        <div class="tl-card">
+          <div class="tl-top">
+            <h3>ASUR — Data Migration Project</h3>
+            <span class="tl-status active">Active</span>
+          </div>
+          <div class="tl-dates">Jun 2026 — Present</div>
+          <p>
+            Designed and implemented a data migration solution using Oracle SOA Suite with
+            embedded Java, extracting client data from legacy source databases and generating
+            structured MNT output files as part of an end-to-end migration pipeline. Built custom
+            data transformation logic within SOA composites and automated the fetch-and-generate
+            process, reducing manual effort. Delivered on schedule despite starting with no prior
+            hands-on Oracle SOA experience.
+          </p>
+          <div class="tl-tags"><span class="tag">Oracle SOA Suite</span><span class="tag">Core Java</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item active reveal">
+        <div class="tl-dot" aria-hidden="true"><i></i></div>
+        <div class="tl-card">
+          <div class="tl-top">
+            <h3>Estée Lauder Companies (ELC)</h3>
+            <span class="tl-status active">Active</span>
+          </div>
+          <div class="tl-dates">Nov 2020 — Present</div>
+          <p>
+            Contributed to a project for Estée Lauder Companies, an American multinational
+            manufacturer of skin care, makeup, fragrance, and hair care products. Worked primarily
+            on transforming legacy data into XML for consumption by the Relate system, alongside
+            backend development, application support, manual testing, and deployment.
+          </p>
+          <div class="tl-tags"><span class="tag">Java</span><span class="tag">Spring Framework</span><span class="tag">Oracle 12c</span><span class="tag">SQL</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot" aria-hidden="true"><i></i></div>
+        <div class="tl-card">
+          <div class="tl-top">
+            <h3>Sally Beauty Holdings (SBH)</h3>
+            <span class="tl-status archived">Archived</span>
+          </div>
+          <div class="tl-dates">Aug 2018 — Oct 2025</div>
+          <p>
+            Supported a project for Sally Beauty Holdings, an American international specialty
+            retailer operating 4,000+ stores across more than 6,000 beauty products. Focused on
+            application support and manual testing, with additional contributions to backend
+            development tasks.
+          </p>
+          <div class="tl-tags"><span class="tag">Java</span><span class="tag">Spring Framework</span><span class="tag">Oracle 12c</span><span class="tag">SQL</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot" aria-hidden="true"><i></i></div>
+        <div class="tl-card">
+          <div class="tl-top">
+            <h3>Charlotte Tilbury Beauty Ltd</h3>
+            <span class="tl-status archived">Archived</span>
+          </div>
+          <div class="tl-dates">Mar 2023 — Aug 2025</div>
+          <p>
+            Contributed to a project for Charlotte Tilbury, a UK-registered cosmetics company.
+            Worked on backend development using Core Java and SQL to support business and
+            data-processing requirements, and handled deployment of a utility JAR file to UAT and
+            Production as part of the release process.
+          </p>
+          <div class="tl-tags"><span class="tag">Java</span><span class="tag">SQL</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot" aria-hidden="true"><i></i></div>
+        <div class="tl-card">
+          <div class="tl-top">
+            <h3>Blick Art Materials</h3>
+            <span class="tl-status archived">Archived</span>
+          </div>
+          <div class="tl-dates">Feb 2022 — Mar 2024</div>
+          <p>
+            Contributed to a project for Blick Art Materials, one of the oldest and largest U.S.
+            art supply retailers, with 65+ stores and 90,000+ products online and in-store.
+            Worked on backend development with Java and Spring Framework, wrote and optimized SQL
+            queries, and used Postman for API testing and validation.
+          </p>
+          <div class="tl-tags"><span class="tag">Java</span><span class="tag">Spring Framework</span><span class="tag">Oracle 12c</span><span class="tag">SQL</span><span class="tag">Postman</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot" aria-hidden="true"><i></i></div>
+        <div class="tl-card">
+          <div class="tl-top">
+            <h3>West Marine</h3>
+            <span class="tl-status archived">Archived</span>
+          </div>
+          <div class="tl-dates">Mar 2022 — Jun 2023</div>
+          <p>
+            Contributed to a project for West Marine, a leading U.S. boating supply and fishing
+            retail chain. Worked on backend development using Java and Spring Framework, and
+            wrote and optimized SQL queries to support business operations and data management.
+          </p>
+          <div class="tl-tags"><span class="tag">Java</span><span class="tag">Spring Framework</span><span class="tag">Oracle 12c</span><span class="tag">SQL</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FEATURED PROJECT ============================ -->
+<section class="featured" id="featured">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">// Featured Build</span>
+      <h2>PrafullTalks — Automated Publishing System</h2>
+      <p>Self-initiated, designed, built, and maintained end-to-end.</p>
+    </div>
+
+    <div class="feature-card reveal">
+      <div class="feature-inner">
+        <div class="feature-top">
+          <span class="badge">Self-Initiated</span>
+          <span class="badge">Runs Daily · Unattended</span>
+          <span class="badge">OAuth 2.0 · CI/CD</span>
+        </div>
+        <h3>A fully automated content pipeline — no manual intervention</h3>
+        <p class="desc">
+          A self-built system that writes, validates, and publishes articles to this blog every
+          day with no manual intervention. It integrates multiple third-party APIs, manages OAuth
+          2.0 authentication end-to-end, and runs on a scheduled CI/CD pipeline.
+        </p>
+
+        <div class="diagram-wrap">
+          <!-- Publishing pipeline diagram (cyclic, self-healing) -->
+          <svg viewBox="0 0 920 300" role="img" aria-labelledby="pubDiagTitle">
+            <title id="pubDiagTitle">Automated publishing pipeline: scheduled trigger to Claude API to validation to Blogger publish to live post, with a self-healing link-audit feedback loop back to validation, and a failure-alert branch.</title>
+            <defs>
+              <marker id="arrowDark" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+                <path d="M0,0 L6,3 L0,6 Z" class="svg-arrow-dark"></path>
+              </marker>
+              <marker id="arrowDarkAccent" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+                <path d="M0,0 L6,3 L0,6 Z" class="svg-arrow-dark accent"></path>
+              </marker>
+            </defs>
+
+            <!-- nodes -->
+            <g>
+              <rect x="14" y="40" width="150" height="64" rx="10" class="svg-node-dark"></rect>
+              <text x="89" y="66" text-anchor="middle" class="svg-label-dark" font-size="12.5">Scheduled Trigger</text>
+              <text x="89" y="84" text-anchor="middle" class="svg-sub-dark" font-size="10">GitHub Actions · Cron</text>
+            </g>
+
+            <g>
+              <rect x="212" y="40" width="150" height="64" rx="10" class="svg-node-dark accent"></rect>
+              <text x="287" y="62" text-anchor="middle" class="svg-label-dark" font-size="12.5">Claude API</text>
+              <text x="287" y="78" text-anchor="middle" class="svg-sub-dark" font-size="10">Multi-step prompt</text>
+              <text x="287" y="92" text-anchor="middle" class="svg-sub-dark" font-size="10">+ model fallback</text>
+            </g>
+
+            <g>
+              <rect x="410" y="40" width="150" height="64" rx="10" class="svg-node-dark"></rect>
+              <text x="485" y="62" text-anchor="middle" class="svg-label-dark" font-size="12.5">Validation</text>
+              <text x="485" y="78" text-anchor="middle" class="svg-sub-dark" font-size="10">Dry-run + checks</text>
+              <text x="485" y="92" text-anchor="middle" class="svg-sub-dark" font-size="10">before anything is live</text>
+            </g>
+
+            <g>
+              <rect x="608" y="40" width="150" height="64" rx="10" class="svg-node-dark"></rect>
+              <text x="683" y="62" text-anchor="middle" class="svg-label-dark" font-size="12.5">Blogger API</text>
+              <text x="683" y="78" text-anchor="middle" class="svg-sub-dark" font-size="10">OAuth 2.0 publish</text>
+              <text x="683" y="92" text-anchor="middle" class="svg-sub-dark" font-size="10">refresh-token managed</text>
+            </g>
+
+            <g>
+              <rect x="806" y="40" width="104" height="64" rx="10" class="svg-node-dark accent"></rect>
+              <text x="858" y="66" text-anchor="middle" class="svg-label-dark" font-size="12.5">Live Post</text>
+              <text x="858" y="84" text-anchor="middle" class="svg-sub-dark" font-size="10">public URL</text>
+            </g>
+
+            <g>
+              <rect x="608" y="190" width="150" height="64" rx="10" class="svg-node-dark"></rect>
+              <text x="683" y="212" text-anchor="middle" class="svg-label-dark" font-size="12.5">Link Auditor</text>
+              <text x="683" y="228" text-anchor="middle" class="svg-sub-dark" font-size="10">verifies internal links</text>
+              <text x="683" y="242" text-anchor="middle" class="svg-sub-dark" font-size="10">detects removed posts</text>
+            </g>
+
+            <g>
+              <rect x="410" y="190" width="150" height="64" rx="10" class="svg-node-dark">
+              </rect>
+              <text x="485" y="212" text-anchor="middle" class="svg-label-dark" font-size="12.5">Re-queue Content</text>
+              <text x="485" y="228" text-anchor="middle" class="svg-sub-dark" font-size="10">self-healing repair</text>
+              <text x="485" y="242" text-anchor="middle" class="svg-sub-dark" font-size="10">loop back to validation</text>
+            </g>
+
+            <g>
+              <rect x="212" y="190" width="150" height="64" rx="10" class="svg-node-dark">
+              </rect>
+              <text x="287" y="212" text-anchor="middle" class="svg-label-dark" font-size="12.5">Failure Alert</text>
+              <text x="287" y="228" text-anchor="middle" class="svg-sub-dark" font-size="10">GitHub Actions</text>
+              <text x="287" y="242" text-anchor="middle" class="svg-sub-dark" font-size="10">notifies on any failure</text>
+            </g>
+
+            <!-- forward flow -->
+            <line x1="164" y1="72" x2="205" y2="72" class="svg-line-dark" marker-end="url(#arrowDark)"></line>
+            <line x1="362" y1="72" x2="403" y2="72" class="svg-line-dark accent" marker-end="url(#arrowDarkAccent)"></line>
+            <line x1="560" y1="72" x2="601" y2="72" class="svg-line-dark" marker-end="url(#arrowDark)"></line>
+            <line x1="758" y1="72" x2="799" y2="72" class="svg-line-dark accent" marker-end="url(#arrowDarkAccent)"></line>
+
+            <!-- live post down to auditor -->
+            <path d="M858,104 L858,222 L764,222" class="svg-line-dark" marker-end="url(#arrowDark)"></path>
+            <!-- auditor to requeue -->
+            <line x1="602" y1="222" x2="566" y2="222" class="svg-line-dark accent" marker-end="url(#arrowDarkAccent)"></line>
+            <!-- requeue back up to validation (self-healing loop) -->
+            <path d="M485,190 L485,120" class="svg-line-dark accent" marker-end="url(#arrowDarkAccent)"></path>
+            <!-- validation to failure alert -->
+            <path d="M410,90 L287,190" class="svg-line-dark" marker-end="url(#arrowDark)" stroke-dasharray="4 4"></path>
+
+            <text x="89" y="130" class="svg-sub-dark" font-size="10">daily · unattended</text>
+            <text x="683" y="278" class="svg-sub-dark" font-size="10">self-healing internal linking</text>
+          </svg>
+        </div>
+
+        <ul class="feature-list">
+          <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"></path><path d="M9.5 12.5l2 2 3-4"></path></svg></span><span><b>AI content generation:</b> integrated the Anthropic Claude API with structured, multi-step prompting and automatic model fallback.</span></li>
+          <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"></rect><path d="M7 11V7a5 5 0 0110 0v4"></path></svg></span><span><b>Publishing automation:</b> integrated the Google Blogger API — OAuth 2.0 with full refresh-token lifecycle management — to publish content programmatically.</span></li>
+          <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l4 4-4 4"></path><path d="M3 11V9a4 4 0 014-4h14"></path><path d="M7 22l-4-4 4-4"></path><path d="M21 13v2a4 4 0 01-4 4H3"></path></svg></span><span><b>Self-healing internal linking:</b> fetches live post data from the API to generate and verify working internal links, and automatically re-queues content if a linked post is later removed.</span></li>
+          <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 3"></path></svg></span><span><b>CI/CD:</b> scheduled and monitored via GitHub Actions, with automatic failure alerts, dry-run testing modes, and validation checks before anything goes live.</span></li>
+          <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v4H4z"></path><path d="M4 12h10M4 16h6"></path></svg></span><span><b>SEO tooling:</b> built diagnostic and bulk-repair scripts — including an automated internal-link auditor — to keep the live site healthy at scale.</span></li>
+        </ul>
+
+        <p class="feature-footnote">
+          Built independently — including debugging real production issues such as OAuth token
+          expiry, third-party API breaking changes, and data-consistency bugs across a
+          multi-service pipeline.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SYSTEMS / ARCHITECTURE ============================ -->
+<section class="architecture" id="systems">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">// Systems</span>
+      <h2>ASUR migration — architecture</h2>
+      <p>A genuinely sequential pipeline: legacy retail data moves through Oracle SOA Suite and
+        custom transformation logic before it ever reaches a downstream system.</p>
+    </div>
+
+    <div class="arch-card reveal">
+      <div class="arch-head">
+        <h3>Legacy Data → Structured Retail Output</h3>
+        <span class="tag">Oracle SOA Suite · Core Java</span>
+      </div>
+      <div class="arch-body">
+        <div class="arch-diagram-scroll">
+          <svg viewBox="0 0 900 190" role="img" aria-labelledby="migDiagTitle">
+            <title id="migDiagTitle">Migration pipeline: Oracle database source flows into Oracle SOA Suite, then transformation logic, then business rules, producing MNT output files consumed by retail systems.</title>
+            <defs>
+              <marker id="arrowLight" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+                <path d="M0,0 L6,3 L0,6 Z" class="svg-arrow"></path>
+              </marker>
+              <marker id="arrowLightAccent" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+                <path d="M0,0 L6,3 L0,6 Z" class="svg-arrow accent"></path>
+              </marker>
+            </defs>
+
+            <g>
+              <rect x="10" y="55" width="130" height="60" rx="8" class="svg-node-rect"></rect>
+              <text x="75" y="80" text-anchor="middle" class="svg-node-text" font-size="12">Oracle Database</text>
+              <text x="75" y="96" text-anchor="middle" class="svg-node-sub" font-size="9.5">legacy source</text>
+            </g>
+            <g>
+              <rect x="184" y="55" width="130" height="60" rx="8" class="svg-node-rect accent"></rect>
+              <text x="249" y="76" text-anchor="middle" class="svg-node-text" font-size="12">Oracle SOA Suite</text>
+              <text x="249" y="92" text-anchor="middle" class="svg-node-sub" font-size="9.5">composite + embedded</text>
+              <text x="249" y="104" text-anchor="middle" class="svg-node-sub" font-size="9.5">Java</text>
+            </g>
+            <g>
+              <rect x="358" y="55" width="130" height="60" rx="8" class="svg-node-rect"></rect>
+              <text x="423" y="80" text-anchor="middle" class="svg-node-text" font-size="12">Transformation</text>
+              <text x="423" y="96" text-anchor="middle" class="svg-node-sub" font-size="9.5">custom Java logic</text>
+            </g>
+            <g>
+              <rect x="532" y="55" width="130" height="60" rx="8" class="svg-node-rect"></rect>
+              <text x="597" y="80" text-anchor="middle" class="svg-node-text" font-size="12">Business Rules</text>
+              <text x="597" y="96" text-anchor="middle" class="svg-node-sub" font-size="9.5">validation logic</text>
+            </g>
+            <g>
+              <rect x="706" y="55" width="90" height="60" rx="8" class="svg-node-rect accent"></rect>
+              <text x="751" y="80" text-anchor="middle" class="svg-node-text" font-size="11.5">MNT Files</text>
+              <text x="751" y="96" text-anchor="middle" class="svg-node-sub" font-size="9">output</text>
+            </g>
+            <g>
+              <rect x="812" y="55" width="82" height="60" rx="8" class="svg-node-rect"></rect>
+              <text x="853" y="80" text-anchor="middle" class="svg-node-text" font-size="11">Retail</text>
+              <text x="853" y="94" text-anchor="middle" class="svg-node-text" font-size="11">Systems</text>
+            </g>
+
+            <line x1="140" y1="85" x2="180" y2="85" class="svg-line" marker-end="url(#arrowLight)"></line>
+            <line x1="314" y1="85" x2="354" y2="85" class="svg-line accent" marker-end="url(#arrowLightAccent)"></line>
+            <line x1="488" y1="85" x2="528" y2="85" class="svg-line" marker-end="url(#arrowLight)"></line>
+            <line x1="662" y1="85" x2="702" y2="85" class="svg-line" marker-end="url(#arrowLight)"></line>
+            <line x1="796" y1="85" x2="808" y2="85" class="svg-line accent" marker-end="url(#arrowLightAccent)"></line>
+
+            <text x="75" y="145" text-anchor="middle" class="svg-node-sub" font-size="9.5">STEP 01</text>
+            <text x="249" y="145" text-anchor="middle" class="svg-node-sub" font-size="9.5">STEP 02</text>
+            <text x="423" y="145" text-anchor="middle" class="svg-node-sub" font-size="9.5">STEP 03</text>
+            <text x="597" y="145" text-anchor="middle" class="svg-node-sub" font-size="9.5">STEP 04</text>
+            <text x="751" y="145" text-anchor="middle" class="svg-node-sub" font-size="9.5">STEP 05</text>
+            <text x="853" y="145" text-anchor="middle" class="svg-node-sub" font-size="9.5">STEP 06</text>
+          </svg>
+        </div>
+
+        <div class="arch-steps">
+          <div class="arch-step"><span class="idx">STEP 01</span><h4>Legacy Source</h4><p>Client data extracted directly from legacy Oracle source databases.</p></div>
+          <div class="arch-step"><span class="idx">STEP 02</span><h4>Oracle SOA Suite</h4><p>SOA composites with embedded Java drive the extraction and orchestration.</p></div>
+          <div class="arch-step"><span class="idx">STEP 03</span><h4>Transformation Logic</h4><p>Custom-built transformation logic reshapes data inside the SOA composite.</p></div>
+          <div class="arch-step"><span class="idx">STEP 04</span><h4>Business Rules</h4><p>Business and data-processing rules validate the transformed records.</p></div>
+          <div class="arch-step"><span class="idx">STEP 05</span><h4>MNT Output Files</h4><p>Structured MNT files are generated as the pipeline's deliverable format.</p></div>
+          <div class="arch-step"><span class="idx">STEP 06</span><h4>Retail Systems</h4><p>Output feeds downstream retail systems as part of the migration.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SKILLS ============================ -->
+<section class="skills" id="skills">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">// Skills &amp; Tools</span>
+      <h2>Technical toolkit</h2>
+      <p>Grouped by where each tool actually shows up in the stack — not a flat tag cloud.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-group reveal">
+        <div class="g-head">
+          <div class="g-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></div>
+          <h4>Languages &amp; Frameworks</h4>
+        </div>
+        <div class="skill-chips">
+          <span class="chip">Java</span><span class="chip">Core Java</span><span class="chip">Spring Framework</span><span class="chip">Python</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <div class="g-head">
+          <div class="g-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14a9 3 0 0018 0V5"></path><path d="M3 12a9 3 0 0018 0"></path></svg></div>
+          <h4>Databases</h4>
+        </div>
+        <div class="skill-chips">
+          <span class="chip">Oracle 12c</span><span class="chip">SQL</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <div class="g-head">
+          <div class="g-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l4 4-4 4"></path><path d="M3 11V9a4 4 0 014-4h14"></path><path d="M7 22l-4-4 4-4"></path><path d="M21 13v2a4 4 0 01-4 4H3"></path></svg></div>
+          <h4>Integration &amp; Middleware</h4>
+        </div>
+        <div class="skill-chips">
+          <span class="chip">Oracle SOA Suite</span><span class="chip">REST APIs</span><span class="chip">OAuth 2.0</span><span class="chip">Postman</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <div class="g-head">
+          <div class="g-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.7 1.7 0 00.34 1.87l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.7 1.7 0 00-1.87-.34 1.7 1.7 0 00-1 1.55V21a2 2 0 01-4 0v-.09a1.7 1.7 0 00-1-1.55 1.7 1.7 0 00-1.87.34l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.7 1.7 0 00.34-1.87 1.7 1.7 0 00-1.55-1H3a2 2 0 010-4h.09a1.7 1.7 0 001.55-1 1.7 1.7 0 00-.34-1.87l-.06-.06a2 2 0 112.83-2.83l.06.06a1.7 1.7 0 001.87.34H9a1.7 1.7 0 001-1.55V3a2 2 0 014 0v.09a1.7 1.7 0 001 1.55 1.7 1.7 0 001.87-.34l.06-.06a2 2 0 112.83 2.83l-.06.06a1.7 1.7 0 00-.34 1.87V9a1.7 1.7 0 001.55 1H21a2 2 0 010 4h-.09a1.7 1.7 0 00-1.55 1z"></path></svg></div>
+          <h4>DevOps &amp; Automation</h4>
+        </div>
+        <div class="skill-chips">
+          <span class="chip">Git</span><span class="chip">GitHub Actions (CI/CD)</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <div class="g-head">
+          <div class="g-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"></path><circle cx="12" cy="12" r="9"></circle></svg></div>
+          <h4>Support &amp; QA</h4>
+        </div>
+        <div class="skill-chips">
+          <span class="chip">Application Support (L1/L2/L3)</span><span class="chip">Manual Testing</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <div class="g-head">
+          <div class="g-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-6 9 6-9 6-9-6z"></path><path d="M3 15l9 6 9-6"></path><path d="M3 9v6"></path><path d="M21 9v6"></path></svg></div>
+          <h4>Retail Platforms</h4>
+        </div>
+        <div class="skill-chips">
+          <span class="chip">StoreHub</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ STATS ============================ -->
+<section class="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card reveal"><div class="num"><span class="counter" data-target="8" data-suffix="+">0</span></div><div class="label">Years Experience</div></div>
+      <div class="stat-card reveal"><div class="num"><span class="counter" data-target="6">0</span></div><div class="label">Retail Brands Supported</div></div>
+      <div class="stat-card reveal"><div class="num"><span class="counter" data-target="3">0</span></div><div class="label">Support Tiers Owned (L1–L3)</div></div>
+      <div class="stat-card reveal"><div class="num"><span class="counter" data-target="365" data-suffix="/yr">0</span></div><div class="label">Automated Runs · Daily Pipeline</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CONTACT ============================ -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-card reveal">
+      <span class="eyebrow">// Get in touch</span>
+      <h2>Let's connect</h2>
+      <p>Open to conversations about backend engineering, automation, or collaboration.</p>
+      <div class="contact-ctas">
+        <a class="btn btn-primary" href="https://www.linkedin.com/in/prafull-ranjan/" target="_blank" rel="noopener">
+          Connect on LinkedIn
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </a>
+      </div>
+      <div class="copy-row">
+        <span id="linkedinUrl">linkedin.com/in/prafull-ranjan</span>
+        <button id="copyLinkedin" type="button" aria-label="Copy LinkedIn URL">Copy</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot-status"><span class="dot" aria-hidden="true"></span> © <span id="year"></span> Prafull Ranjan — systems online</div>
+    <button class="back-top" id="backTop" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+    </button>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---- Year ---- */
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* ---- Theme toggle (in-memory only; no storage) ---- */
+  var root = document.documentElement;
+  var themeToggle = document.getElementById('themeToggle');
+  var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  var current = prefersDark ? 'dark' : 'light';
+  root.setAttribute('data-theme', current);
+  themeToggle.setAttribute('aria-pressed', String(current === 'dark'));
+
+  themeToggle.addEventListener('click', function(){
+    current = current === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', current);
+    themeToggle.setAttribute('aria-pressed', String(current === 'dark'));
+  });
+
+  /* ---- Mobile nav ---- */
+  var navToggle = document.getElementById('navToggle');
+  var navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', function(){
+    var isOpen = navLinks.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+  navLinks.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ navLinks.classList.remove('open'); navToggle.setAttribute('aria-expanded','false'); });
+  });
+
+  /* ---- Scroll progress bar ---- */
+  var progressBar = document.getElementById('progress-bar');
+  function updateProgress(){
+    var h = document.documentElement;
+    var scrolled = (h.scrollTop) / ((h.scrollHeight - h.clientHeight) || 1) * 100;
+    progressBar.style.width = scrolled + '%';
+  }
+  document.addEventListener('scroll', updateProgress, { passive: true });
+  updateProgress();
+
+  /* ---- Back to top ---- */
+  document.getElementById('backTop').addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+  });
+
+  /* ---- Copy LinkedIn ---- */
+  var copyBtn = document.getElementById('copyLinkedin');
+  copyBtn.addEventListener('click', function(){
+    var text = 'https://www.linkedin.com/in/prafull-ranjan/';
+    var done = function(){ copyBtn.textContent = 'Copied!'; setTimeout(function(){ copyBtn.textContent = 'Copy'; }, 1800); };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done).catch(done);
+    } else {
+      done();
+    }
+  });
+
+  /* ---- Scroll reveal ---- */
+  var revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window && !reduceMotion) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) { entry.target.classList.add('in'); io.unobserve(entry.target); }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add('in'); });
+  }
+
+  /* ---- Animated counters ---- */
+  var counters = document.querySelectorAll('.counter');
+  function animateCounter(el){
+    var target = parseFloat(el.getAttribute('data-target'));
+    var suffix = el.getAttribute('data-suffix') || '';
+    if (reduceMotion) { el.textContent = target + suffix; return; }
+    var duration = 1400, start = null;
+    function step(ts){
+      if (!start) start = ts;
+      var progress = Math.min((ts - start) / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.round(eased * target) + suffix;
+      if (progress < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  if ('IntersectionObserver' in window) {
+    var cio = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) { animateCounter(entry.target); cio.unobserve(entry.target); }
+      });
+    }, { threshold: 0.6 });
+    counters.forEach(function(el){ cio.observe(el); });
+  } else {
+    counters.forEach(animateCounter);
+  }
+
+  /* ---- Typing effect for hero role line ---- */
+  var roles = [
+    'Software Engineer · System Analyst',
+    'Backend Developer — Java & Spring',
+    'Application Support — L1 / L2 / L3',
+    'Automation Builder'
+  ];
+  var typedEl = document.getElementById('typedRole');
+  if (reduceMotion) {
+    typedEl.textContent = roles[0];
+  } else {
+    var rIdx = 0, cIdx = 0, deleting = false;
+    function typeTick(){
+      var word = roles[rIdx];
+      if (!deleting) {
+        cIdx++;
+        typedEl.textContent = word.slice(0, cIdx);
+        if (cIdx === word.length) { deleting = true; setTimeout(typeTick, 1500); return; }
+      } else {
+        cIdx--;
+        typedEl.textContent = word.slice(0, cIdx);
+        if (cIdx === 0) { deleting = false; rIdx = (rIdx + 1) % roles.length; }
+      }
+      setTimeout(typeTick, deleting ? 35 : 55);
+    }
+    typeTick();
+  }
+
+  /* ---- Active nav link on scroll ---- */
+  var sections = document.querySelectorAll('main section[id]');
+  var navAs = document.querySelectorAll('.nav-links a');
+  if ('IntersectionObserver' in window) {
+    var navIo = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        var id = entry.target.getAttribute('id');
+        var link = document.querySelector('.nav-links a[href="#' + id + '"]');
+        if (!link) return;
+        if (entry.isIntersecting) {
+          navAs.forEach(function(a){ a.style.color = ''; });
+          link.style.color = 'var(--ink)';
+        }
+      });
+    }, { threshold: 0.4 });
+    sections.forEach(function(s){ navIo.observe(s); });
+  }
+})();
+</script>
+</body>
+</html>
