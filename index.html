@@ -4,27 +4,26 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Prafull Ranjan — Backend Software Engineer &amp; Systems Analyst</title>
-<meta name="description" content="Prafull Ranjan is a backend software engineer with 8+ years at SkillNet Solutions, building and supporting production systems for global retail brands including Estée Lauder Companies, Sally Beauty Holdings, Charlotte Tilbury, Blick Art Materials and West Marine. Java, Spring, Oracle, Oracle SOA Suite, automation.">
+<meta name="description" content="Prafull Ranjan — software engineer at SkillNet Solutions with about 8 years of experience in backend development and application support for retail clients. Also builds websites for small businesses on the side.">
 <meta name="keywords" content="Prafull Ranjan, Backend Software Engineer, System Analyst, Java Developer, Spring Framework, Oracle SOA Suite, Application Support, SkillNet Solutions, Retail Systems Engineer">
 <meta name="author" content="Prafull Ranjan">
 <meta name="robots" content="index, follow">
-<!-- IMPORTANT: replace this with your real hosted URL once deployed (see instructions) -->
-<link rel="canonical" href="https://pr20691.github.io/prafull-portfolio/">
+<link rel="canonical" href="https://pranjan.netlify.app/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%BB%3C/text%3E%3C/svg%3E">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Prafull Ranjan — Backend Software Engineer & Systems Analyst">
-<meta property="og:description" content="8+ years building and supporting production backend systems for global retail brands. Java · Spring · Oracle · Oracle SOA Suite · Automation.">
-<meta property="og:url" content="https://pr20691.github.io/prafull-portfolio/">
+<meta property="og:description" content="Software engineer at SkillNet Solutions — backend development and application support for retail clients. Also builds websites on the side.">
+<meta property="og:url" content="https://pranjan.netlify.app/">
 <meta property="og:site_name" content="Prafull Ranjan — Portfolio">
-<meta property="og:image" content="https://pr20691.github.io/prafull-portfolio/og-image.png">
+<meta property="og:image" content="https://pranjan.netlify.app/images/P1.png">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Prafull Ranjan — Backend Software Engineer & Systems Analyst">
-<meta name="twitter:description" content="8+ years building and supporting production backend systems for global retail brands. Java · Spring · Oracle · Oracle SOA Suite · Automation.">
-<meta name="twitter:image" content="https://pr20691.github.io/prafull-portfolio/og-image.png">
+<meta name="twitter:description" content="Software engineer at SkillNet Solutions — backend development and application support for retail clients. Also builds websites on the side.">
+<meta name="twitter:image" content="https://pranjan.netlify.app/images/P1.png">
 
 <!-- JSON-LD -->
 <script type="application/ld+json">
@@ -37,9 +36,11 @@
     "@type": "Organization",
     "name": "SkillNet Solutions, Inc."
   },
-  "url": "https://pr20691.github.io/prafull-portfolio/",
+  "url": "https://pranjan.netlify.app/",
+  "email": "prafullranjan@zohomail.in",
   "sameAs": [
-    "https://www.linkedin.com/in/prafull-ranjan/"
+    "https://www.linkedin.com/in/prafull-ranjan/",
+    "https://www.prafulltalks.com"
   ],
   "knowsAbout": [
     "Java", "Spring Framework", "Oracle 12c", "SQL", "Oracle SOA Suite",
@@ -379,6 +380,23 @@ a:focus-visible, button:focus-visible, input:focus-visible{
 }
 
 /* ============================================================
+   5b. WRITING
+   ============================================================ */
+.writing{ padding: 120px 0; border-top: 1px solid var(--line); }
+.grid.cols-2{ display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.card{
+  background: var(--paper-raised); border: 1px solid var(--line); border-radius: var(--radius-m);
+  padding: 28px 26px; box-shadow: var(--shadow-sm);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.card:hover{ transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: var(--line-strong); }
+.card h3{ font-family: var(--font-display); font-size: 19px; font-weight: 600; margin-bottom: 12px; }
+.card p{ color: var(--ink-soft); font-size: 15px; line-height: 1.75; margin-bottom: 10px; }
+.card ul{ color: var(--ink-soft); font-size: 14.5px; padding-left: 0; }
+.card ul li{ padding-left: 16px; position: relative; }
+.card ul li::before{ content: '→'; position: absolute; left: 0; color: var(--signal); }
+
+/* ============================================================
    6. FEATURED PROJECT
    ============================================================ */
 .featured{ padding: 120px 0; border-top: 1px solid var(--line); }
@@ -533,6 +551,9 @@ footer .container{ display:flex; align-items:center; justify-content: space-betw
   .stats-grid{ grid-template-columns: repeat(2,1fr); }
   .arch-steps{ grid-template-columns: 1fr 1fr; }
   .feature-list{ grid-template-columns: 1fr; }
+  .grid.cols-2{ grid-template-columns: 1fr; }
+  .services-grid{ grid-template-columns: repeat(2,1fr); }
+  .testimonial-grid{ grid-template-columns: 1fr; }
 }
 @media (max-width: 760px){
   .nav-links{
@@ -552,7 +573,96 @@ footer .container{ display:flex; align-items:center; justify-content: space-betw
   .stats-grid{ grid-template-columns: repeat(2,1fr); }
   .arch-steps{ grid-template-columns: 1fr; }
   .feature-card{ padding: 36px 24px; }
-  .about, .experience, .featured, .architecture, .skills, .stats, .contact{ padding: 80px 0; }
+  .about, .experience, .writing, .featured, .architecture, .skills, .stats, .contact, .services, .testimonials, .projects{ padding: 80px 0; }
+  .services-grid{ grid-template-columns: 1fr; }
+  .floating-wa{ bottom: 16px; right: 16px; width: 50px; height: 50px; }
+  .floating-wa svg{ width: 24px; height: 24px; }
+}
+
+/* ============================================================
+   13. SERVICES
+   ============================================================ */
+.services{ padding: 120px 0; border-top: 1px solid var(--line); }
+.services-grid{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.service-card{
+  background: var(--paper-raised); border: 1px solid var(--line); border-radius: var(--radius-m);
+  padding: 28px 24px; box-shadow: var(--shadow-sm);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.service-card:hover{ transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: var(--signal); }
+.service-card .s-icon{ width: 44px; height: 44px; border-radius: 12px; background: var(--signal-dim); display:flex; align-items:center; justify-content:center; margin-bottom: 18px; }
+.service-card .s-icon svg{ width: 22px; height: 22px; stroke: var(--signal); }
+.service-card h3{ font-family: var(--font-display); font-size: 18px; font-weight: 600; margin-bottom: 10px; }
+.service-card p{ color: var(--ink-soft); font-size: 14.5px; line-height: 1.7; }
+
+/* ============================================================
+   14. CONTACT FORM
+   ============================================================ */
+.contact-form{
+  max-width: 560px; margin: 32px auto 0; text-align: left;
+}
+.contact-form .form-row{ margin-bottom: 18px; }
+.contact-form label{
+  display: block; font-size: 13.5px; font-weight: 600; margin-bottom: 6px;
+  font-family: var(--font-mono); text-transform: uppercase; letter-spacing: .04em; color: var(--muted);
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+  width: 100%; padding: 12px 16px; border: 1px solid var(--line-strong); border-radius: var(--radius-s);
+  background: var(--paper); color: var(--ink); font-family: var(--font-body); font-size: 15px;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus{
+  outline: none; border-color: var(--signal); box-shadow: 0 0 0 3px var(--signal-dim);
+}
+.contact-form textarea{ resize: vertical; min-height: 100px; }
+.contact-form .form-submit{ text-align: center; margin-top: 24px; }
+
+/* ============================================================
+   15. TESTIMONIALS
+   ============================================================ */
+.testimonials{ padding: 120px 0; border-top: 1px solid var(--line); }
+.testimonial-grid{ display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.testimonial-card{
+  background: var(--paper-raised); border: 1px solid var(--line); border-radius: var(--radius-m);
+  padding: 28px 26px; box-shadow: var(--shadow-sm); position: relative;
+}
+.testimonial-card .quote-icon{ font-size: 32px; color: var(--signal-dim); margin-bottom: 12px; line-height: 1; }
+.testimonial-card blockquote{ color: var(--ink-soft); font-size: 15px; line-height: 1.8; font-style: italic; margin-bottom: 16px; }
+.testimonial-card .t-author{ font-weight: 600; font-size: 14.5px; }
+.testimonial-card .t-role{ font-size: 13px; color: var(--muted); font-family: var(--font-mono); }
+
+/* ============================================================
+   16. FLOATING WHATSAPP BUTTON
+   ============================================================ */
+.floating-wa{
+  position: fixed; bottom: 24px; right: 24px; z-index: 800;
+  width: 56px; height: 56px; border-radius: 50%;
+  background: #25D366; color: #fff; border: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 14px rgba(37,211,102,.45);
+  transition: transform .2s ease, box-shadow .2s ease;
+  text-decoration: none;
+}
+.floating-wa:hover{ transform: scale(1.1); box-shadow: 0 6px 20px rgba(37,211,102,.55); }
+.floating-wa svg{ width: 28px; height: 28px; fill: #fff; }
+
+/* ============================================================
+   17. HERO FREELANCE BADGE
+   ============================================================ */
+.hero-freelance-badge{
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--live-dim); color: var(--live); border: 1px solid var(--live);
+  padding: 8px 16px; border-radius: 999px; font-family: var(--font-mono);
+  font-size: 12.5px; font-weight: 600; text-transform: uppercase; letter-spacing: .04em;
+  margin-bottom: 18px;
+}
+.hero-freelance-badge .pulse-dot{
+  width: 8px; height: 8px; border-radius: 50%; background: var(--live);
+  animation: pulse 2.4s ease-in-out infinite;
 }
 
 /* Print */
@@ -577,9 +687,10 @@ footer .container{ display:flex; align-items:center; justify-content: space-betw
     <nav class="nav-links" id="navLinks" aria-label="Primary">
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#services">Services</a>
       <a href="#writing">Writing</a>
       <a href="#featured">Featured Work</a>
-      <a href="#systems">Systems</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -604,20 +715,20 @@ footer .container{ display:flex; align-items:center; justify-content: space-betw
   <div class="hero-glow" aria-hidden="true"></div>
   <div class="container">
     <div class="hero-inner">
-      <span class="hero-status"><span class="dot" aria-hidden="true"></span> STATUS: OPERATIONAL · 8+ YRS UPTIME</span>
+      <span class="hero-status"><span class="dot" aria-hidden="true"></span> Working in IT · ~8 Years</span>
+      <div class="hero-freelance-badge"><span class="pulse-dot" aria-hidden="true"></span> Open to Side Projects · Evenings &amp; Weekends</div>
       <h1>Prafull Ranjan</h1>
       <div class="hero-role" aria-live="polite"><span id="typedRole"></span><span class="cursor" aria-hidden="true"></span></div>
 <p class="lede">
-  Backend-focused software engineer with close to eight years at SkillNet Solutions, Inc.,
-  building and supporting production systems for global retail brands—from legacy data
-  migration to Java/Spring services that keep real stores and storefronts running.
+  I work as a software engineer at SkillNet Solutions, Inc., where I've spent about eight
+  years doing backend development and application support for retail clients. Mostly Java,
+  Spring, Oracle, and a lot of production debugging.
 
   <br><br>
 
-  Beyond engineering, I actively share practical knowledge through
-  <strong>PrafullTalks</strong>, where I publish articles on enterprise technology,
-  software engineering, life insights, and social issues. My goal is to make complex
-  topics simple, practical, and useful for everyone.
+  On the side, I build simple websites for small businesses and schools, and write about
+  things I learn through my blog <strong>PrafullTalks</strong>. Nothing fancy — just
+  trying to keep learning and be useful.
 </p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="https://www.linkedin.com/in/prafull-ranjan/" target="_blank" rel="noopener">
@@ -644,11 +755,11 @@ footer .container{ display:flex; align-items:center; justify-content: space-betw
         </div>
         <div>
           <div class="num">L1–L3</div>
-          <div class="label">Support Tiers Owned</div>
+          <div class="label">Support Tiers</div>
         </div>
         <div>
-          <div class="num"><span class="counter" data-target="1">0</span></div>
-          <div class="label">Knowledge Articles</div>
+          <div class="num"><span class="counter" data-target="50" data-suffix="+">0</span></div>
+          <div class="label">Blog Articles</div>
         </div>
       </div>
     </div>
@@ -661,119 +772,54 @@ footer .container{ display:flex; align-items:center; justify-content: space-betw
     <div class="reveal">
       <span class="eyebrow">// About</span>
       <h2 style="font-family:var(--font-display); font-size:clamp(28px,4vw,38px); font-weight:600; margin:12px 0 26px; letter-spacing:-0.02em;">
-        Backend systems, kept running.
+        A bit about me
       </h2>
       <div class="about-copy">
         <p>
-          I'm a backend-focused software engineer with close to eight years of experience at
-          <strong>SkillNet Solutions, Inc.</strong>, primarily working in the retail domain. Over
-          that time I've supported and built systems for international retail brands — helping
-          them migrate legacy data, keep production systems running, and deliver features
-          reliably under real business deadlines.
+          I've been working at <strong>SkillNet Solutions, Inc.</strong> for about eight years,
+          mostly on backend systems for retail clients. My day-to-day involves Java, Spring,
+          Oracle databases, and a fair amount of application support — looking at logs, figuring
+          out production issues, and keeping things running.
         </p>
         <p>
-          My core strength is <strong>backend development and application support</strong> —
-          writing and maintaining Java/Spring services, working with Oracle databases and SQL,
-          and providing <strong>L1/L2/L3 production support</strong>: investigating live issues,
-          reading through logs under time pressure, debugging defects, and coordinating fixes to
-          keep critical retail systems running.
+          I do <strong>backend development and application support</strong> — writing Java/Spring
+          code, working with SQL and Oracle, and handling <strong>L1/L2/L3 production support</strong>
+          when things go wrong. It's mostly practical, hands-on work rather than anything
+          cutting-edge.
         </p>
         <p>
-          I've also taken on work outside my usual stack when a project needed it — including
-          picking up <strong>Oracle SOA Suite</strong> for a data migration project with no prior
-          hands-on experience, and delivering it on time. Outside of client work, I build and
-          maintain personal engineering projects to keep learning new tools on my own terms.
+          Recently I picked up <strong>Oracle SOA Suite</strong> for a data migration project —
+          it was new to me and a good learning experience. Outside of client work, I try to keep
+          learning by building small projects and writing about what I learn.
         </p>
-        <div style="margin-top:28px;padding:22px;background:#f8fafc;border-left:4px solid #6366f1;border-radius:10px;">
-
-  <h3 style="margin-top:0;margin-bottom:14px;">
-    ✍️ Beyond Software Engineering
-  </h3>
-
-  <p>
-
-    Alongside my professional work, I actively write practical articles through
-    <strong>PrafullTalks</strong>, my personal knowledge platform.
-
-  </p>
-
-  <p>
-
-    I enjoy simplifying enterprise technology, software engineering concepts,
-    productivity, life lessons, and social topics into practical articles that are
-    easy for anyone to understand.
-
-  </p>
-
-  <p style="margin-bottom:0;">
-
-    <a href="https://www.prafulltalks.com"
-       target="_blank"
-       rel="noopener">
-
-      🌐 Visit PrafullTalks →
-
-    </a>
-
-  </p>
-
-</div>
+        <div style="margin-top:28px;padding:22px;background:var(--mono-bg);border-left:4px solid var(--signal);border-radius:10px;">
+          <h3 style="margin-top:0;margin-bottom:14px;">✍️ PrafullTalks — My Blog</h3>
+          <p>I write articles on <strong>PrafullTalks</strong> every Monday — mostly about technology, software engineering, and things I find useful or interesting.</p>
+          <p>It started as an experiment with automated publishing, but now I write and post manually each week. It helps me organize what I'm learning and hopefully someone else finds it useful too.</p>
+          <p style="margin-bottom:0;"><a href="https://www.prafulltalks.com" target="_blank" rel="noopener">🌐 Visit PrafullTalks →</a></p>
+        </div>
       </div>
     </div>
-    <div style="margin-top:32px;padding:24px;background:#f8fafc;border-left:4px solid #6366f1;border-radius:10px;">
-<img src="images/Prafull.jpg" alt="Knowledge Sharing" style="width:160px;height:160px;object-fit:cover;object-position:center top;display:block;margin:0 auto 18px;border-radius:50%;border:3px solid #6366f1;" />
-<h3 style="margin-top:0;">
-✍️ Knowledge Sharing
-</h3>
-
-<p>
-
-Outside my professional work, I enjoy simplifying complex technology and sharing practical knowledge.
-
-Alongside my professional work, I maintain <strong>PrafullTalks</strong>, a personal knowledge platform where I document what I learn and publish practical articles on enterprise technology, software engineering, life, and society.
-</p>
-
-<p>
-
-<a href="https://www.prafulltalks.com"
-target="_blank"
-rel="noopener">
-
-Visit PrafullTalks →
-
-</a>
-
-</p>
-
-</div>
-    <div class="reveal panel" style="transition-delay:.15s;">
-      <div class="panel-head">
-        <span>profile.status</span>
-        <div class="dots"><span></span><span></span><span></span></div>
+    <div class="reveal" style="transition-delay:.15s;">
+      <div style="text-align:center;margin-bottom:24px;">
+        <img src="images/P1.png" alt="Prafull Ranjan" style="width:180px;height:180px;object-fit:cover;object-position:center top;display:block;margin:0 auto;border-radius:50%;border:3px solid var(--signal);box-shadow:var(--shadow-md);" />
       </div>
-      <div class="panel-body">
-        <div class="kv"><span class="k">Role</span><span class="v">Software Engineer · System Analyst</span></div>
-        <div class="kv"><span class="k">Employer</span><span class="v">SkillNet Solutions, Inc.</span></div>
-        <div class="kv"><span class="k">Domain</span><span class="v">Retail — Backend &amp; Data</span></div>
-        <div class="kv"><span class="k">Core Stack</span><span class="v">Java · Spring · Oracle · SQL</span></div>
-        <div class="kv"><span class="k">Support Coverage</span><span class="v">L1 / L2 / L3</span></div>
-        <div class="kv"><span class="k">Current Focus</span><span class="v tag">Oracle SOA Migration</span></div>
-        <div class="kv">
-          <span class="k">Knowledge Platform</span>
-          <span class="v">
-              <a href="https://www.prafulltalks.com"
-                 target="_blank"
-                 rel="noopener">
-                  PrafullTalks ↗
-              </a>
-          </span>
+      <div class="panel">
+        <div class="panel-head">
+          <span>profile.status</span>
+          <div class="dots"><span></span><span></span><span></span></div>
         </div>
-
-        <div class="kv">
-            <span class="k">Writing Focus</span>
-            <span class="v tag">
-                Technolog • Life Insights • Social Issues
-            </span>
+        <div class="panel-body">
+          <div class="kv"><span class="k">Role</span><span class="v">Software Engineer · System Analyst</span></div>
+          <div class="kv"><span class="k">Employer</span><span class="v">SkillNet Solutions, Inc.</span></div>
+          <div class="kv"><span class="k">Domain</span><span class="v">Retail — Backend &amp; Data</span></div>
+          <div class="kv"><span class="k">Core Stack</span><span class="v">Java · Spring · Oracle · SQL</span></div>
+          <div class="kv"><span class="k">Support Coverage</span><span class="v">L1 / L2 / L3</span></div>
+          <div class="kv"><span class="k">Current Focus</span><span class="v tag">Oracle SOA Migration</span></div>
+          <div class="kv"><span class="k">Knowledge Platform</span><span class="v"><a href="https://www.prafulltalks.com" target="_blank" rel="noopener">PrafullTalks ↗</a></span></div>
+          <div class="kv"><span class="k">Writing Focus</span><span class="v tag">Technology • Life Insights • Social Issues</span></div>
+          <div class="kv"><span class="k">Email</span><span class="v"><a href="mailto:prafullranjan@zohomail.in">prafullranjan@zohomail.in</a></span></div>
+          <div class="kv"><span class="k">Side Projects</span><span class="v tag">Open · Evenings &amp; Weekends</span></div>
         </div>
       </div>
     </div>
@@ -785,40 +831,12 @@ Visit PrafullTalks →
   <div class="container">
     <div class="section-head reveal">
       <span class="eyebrow">// Experience</span>
-      <h2>Client engagements at SkillNet Solutions</h2>
-      <p>One continuous employer, six retail-brand engagements — spanning data migration, backend
-        development, and production support.</p>
+      <h2>Work at SkillNet Solutions</h2>
+      <p>I've been with SkillNet since 2018, working across different retail client projects.</p>
     </div>
 
     <div class="timeline">
 
-    <div class="tl-item active reveal">
-        <div class="tl-dot" aria-hidden="true"><i></i></div>
-        <div class="tl-card">
-          <div class="tl-top">
-            <h3>SPS International School — Website Design &amp; Development</h3>
-            <span class="tl-status active">Live</span>
-          </div>
-          <div class="tl-dates">2026 · Client Project</div>
-          <p>
-            Designed and built a complete admissions and marketing website for a school
-            (Nursery to Class 8) from scratch, self-initiated outside my usual client work.
-            Delivered an animated hero with live counters, About/Principal's message/Team
-            sections, a facilities showcase, a transparent "Today / In Progress / Future
-            Vision" growth story section, an academic journey timeline, a notice board,
-            WhatsApp update integration, a photo/video gallery, testimonials, an FAQ
-            accordion, a spam-protected admission enquiry form, and a contact section with
-            embedded Google Maps — deployed and hosted entirely free on Netlify.
-          </p>
-          <div class="tl-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Netlify</span></div>
-          <p style="margin-top:14px;">
-            <a class="btn btn-ghost" href="https://sps-ischool.netlify.app/" target="_blank" rel="noopener">
-              View Live Site ↗
-            </a>
-          </p>
-        </div>
-      </div>
-      
       <div class="tl-item active reveal">
         <div class="tl-dot" aria-hidden="true"><i></i></div>
         <div class="tl-card">
@@ -828,12 +846,10 @@ Visit PrafullTalks →
           </div>
           <div class="tl-dates">Jun 2026 — Present</div>
           <p>
-            Designed and implemented a data migration solution using Oracle SOA Suite with
-            embedded Java, extracting client data from legacy source databases and generating
-            structured MNT output files as part of an end-to-end migration pipeline. Built custom
-            data transformation logic within SOA composites and automated the fetch-and-generate
-            process, reducing manual effort. Delivered on schedule despite starting with no prior
-            hands-on Oracle SOA experience.
+            Working on a data migration project using Oracle SOA Suite with embedded Java —
+            extracting client data from legacy source databases and generating structured MNT
+            output files. Built data transformation logic within SOA composites. This was my
+            first time working with Oracle SOA, so it's been a good learning experience.
           </p>
           <div class="tl-tags"><span class="tag">Oracle SOA Suite</span><span class="tag">Core Java</span></div>
         </div>
@@ -848,10 +864,9 @@ Visit PrafullTalks →
           </div>
           <div class="tl-dates">Nov 2020 — Present</div>
           <p>
-            Contributed to a project for Estée Lauder Companies, an American multinational
-            manufacturer of skin care, makeup, fragrance, and hair care products. Worked primarily
-            on transforming legacy data into XML for consumption by the Relate system, alongside
-            backend development, application support, manual testing, and deployment.
+            Working on a project for Estée Lauder Companies. My role has been around transforming
+            legacy data into XML for the Relate system, along with backend development,
+            application support, manual testing, and deployment tasks.
           </p>
           <div class="tl-tags"><span class="tag">Java</span><span class="tag">Spring Framework</span><span class="tag">Oracle 12c</span><span class="tag">SQL</span></div>
         </div>
@@ -866,10 +881,8 @@ Visit PrafullTalks →
           </div>
           <div class="tl-dates">Aug 2018 — Oct 2025</div>
           <p>
-            Supported a project for Sally Beauty Holdings, an American international specialty
-            retailer operating 4,000+ stores across more than 6,000 beauty products. Focused on
-            application support and manual testing, with additional contributions to backend
-            development tasks.
+            Was part of the team supporting Sally Beauty Holdings. Mostly handled application
+            support and manual testing, with some backend development work as needed.
           </p>
           <div class="tl-tags"><span class="tag">Java</span><span class="tag">Spring Framework</span><span class="tag">Oracle 12c</span><span class="tag">SQL</span></div>
         </div>
@@ -884,10 +897,8 @@ Visit PrafullTalks →
           </div>
           <div class="tl-dates">Mar 2023 — Aug 2025</div>
           <p>
-            Contributed to a project for Charlotte Tilbury, a UK-registered cosmetics company.
-            Worked on backend development using Core Java and SQL to support business and
-            data-processing requirements, and handled deployment of a utility JAR file to UAT and
-            Production as part of the release process.
+            Worked on a project for Charlotte Tilbury. Did some backend development using Core
+            Java and SQL, and helped with deploying a utility JAR file to UAT and Production.
           </p>
           <div class="tl-tags"><span class="tag">Java</span><span class="tag">SQL</span></div>
         </div>
@@ -902,10 +913,8 @@ Visit PrafullTalks →
           </div>
           <div class="tl-dates">Feb 2022 — Mar 2024</div>
           <p>
-            Contributed to a project for Blick Art Materials, one of the oldest and largest U.S.
-            art supply retailers, with 65+ stores and 90,000+ products online and in-store.
-            Worked on backend development with Java and Spring Framework, wrote and optimized SQL
-            queries, and used Postman for API testing and validation.
+            Worked on a project for Blick Art Materials. Did backend development with Java and
+            Spring Framework, wrote SQL queries, and used Postman for API testing.
           </p>
           <div class="tl-tags"><span class="tag">Java</span><span class="tag">Spring Framework</span><span class="tag">Oracle 12c</span><span class="tag">SQL</span><span class="tag">Postman</span></div>
         </div>
@@ -920,9 +929,8 @@ Visit PrafullTalks →
           </div>
           <div class="tl-dates">Mar 2022 — Jun 2023</div>
           <p>
-            Contributed to a project for West Marine, a leading U.S. boating supply and fishing
-            retail chain. Worked on backend development using Java and Spring Framework, and
-            wrote and optimized SQL queries to support business operations and data management.
+            Worked on a project for West Marine. Backend development using Java and Spring
+            Framework, and SQL queries for business operations support.
           </p>
           <div class="tl-tags"><span class="tag">Java</span><span class="tag">Spring Framework</span><span class="tag">Oracle 12c</span><span class="tag">SQL</span></div>
         </div>
@@ -932,252 +940,222 @@ Visit PrafullTalks →
   </div>
 </section>
 
+<!-- ============================ INDEPENDENT & CLIENT PROJECTS ============================ -->
+<section class="experience projects" id="projects" style="background:var(--paper-raised);">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">// Independent &amp; Client Projects</span>
+      <h2>Side projects</h2>
+      <p>A few things I've built or worked on outside of office hours, on evenings and weekends.</p>
+    </div>
+
+    <div class="timeline">
+
+      <div class="tl-item active reveal">
+        <div class="tl-dot" aria-hidden="true"><i></i></div>
+        <div class="tl-card">
+          <div class="tl-top">
+            <h3>SPS International School — Website Design &amp; Development</h3>
+            <span class="tl-status active">Live</span>
+          </div>
+          <div class="tl-dates">2026 · Client Project</div>
+          <p>
+            Built a website for a school (Nursery to Class 8) — includes sections like
+            admissions info, facilities, team, gallery, FAQ, enquiry form, and Google Maps.
+            Simple HTML/CSS/JS, hosted free on Netlify.
+          </p>
+          <div class="tl-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Netlify</span></div>
+          <p style="margin-top:14px;">
+            <a class="btn btn-ghost" href="https://sps-ischool.netlify.app/" target="_blank" rel="noopener">
+              View Live Site ↗
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="tl-item active reveal">
+        <div class="tl-dot" aria-hidden="true"><i></i></div>
+        <div class="tl-card">
+          <div class="tl-top">
+            <h3>Maa Neurotherapy Health Care Centre — Website</h3>
+            <span class="tl-status active">Live</span>
+          </div>
+          <div class="tl-dates">2026 · Client Project</div>
+          <p>
+            Built a website for a drugless neurotherapy clinic in Siwan, Bihar, run by
+            specialist Govind Kumar. Covers services, treatments, patient info, and contact
+            details. Simple and clean — HTML, CSS, JS on Netlify.
+          </p>
+          <div class="tl-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Netlify</span></div>
+          <p style="margin-top:14px;">
+            <a class="btn btn-ghost" href="https://maaneuro.netlify.app/" target="_blank" rel="noopener">
+              View Live Site ↗
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="tl-item active reveal">
+        <div class="tl-dot" aria-hidden="true"><i></i></div>
+        <div class="tl-card">
+          <div class="tl-top">
+            <h3>Prafull Ranjan — Portfolio Website</h3>
+            <span class="tl-status active">Live</span>
+          </div>
+          <div class="tl-dates">2026 · Personal Project</div>
+          <p>
+            This portfolio website — a single page with dark/light mode and a contact form.
+            Built with plain HTML, CSS, and JavaScript. Hosted free on Netlify.
+          </p>
+          <div class="tl-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Netlify</span></div>
+          <p style="margin-top:14px;">
+            <a class="btn btn-ghost" href="https://pranjan.netlify.app/" target="_blank" rel="noopener">
+              View Live Site ↗
+            </a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SERVICES ============================ -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">// Side Projects &amp; Independent Work</span>
+      <h2>What I can help with</h2>
+      <p>Outside of my full-time role, I take on independent projects on evenings and weekends — primarily website development and technical writing.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></div>
+        <h3>Website Design &amp; Development</h3>
+        <p>Simple, clean websites for schools, small businesses, and personal use — built with HTML, CSS, JS and hosted free on Netlify.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.12 2.12 0 013 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg></div>
+        <h3>Technical &amp; Content Writing</h3>
+        <p>I write articles on technology, software engineering, and practical topics on PrafullTalks — 50+ articles so far, published every Monday.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l4 4-4 4"></path><path d="M3 11V9a4 4 0 014-4h14"></path><path d="M7 22l-4-4 4-4"></path><path d="M21 13v2a4 4 0 01-4 4H3"></path></svg></div>
+        <h3>Small Tools &amp; Automation</h3>
+        <p>Simple workflow tools and scripts using Python, GitHub Actions, and APIs — built for personal use and learning.</p>
+      </div>
+    </div>
+
+    <p style="text-align:center;margin-top:28px;color:var(--muted);font-size:13px;font-style:italic;" class="reveal">
+      All independent work is done outside of regular work hours and does not overlap with my employer's business.
+    </p>
+
+    <div style="text-align:center;margin-top:20px;" class="reveal">
+      <a class="btn btn-primary" href="https://wa.me/919942830645?text=Hi%20Prafull%2C%20I%20visited%20your%20portfolio%20and%20I%27m%20interested%20in%20a%20project.%20Let%27s%20connect!" target="_blank" rel="noopener">
+        💬 Discuss a Project on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ============================ FEATURED PROJECT ============================ -->
 <section class="featured" id="featured">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow">// Featured Build</span>
-      <h2>PrafullTalks — AI-Assisted Publishing Platform</h2>
-      <p>A production-ready automation platform that researches, generates,validates, publishes, and archives SEO-friendly blog content with minimal manual effort.</p>
+      <span class="eyebrow">// Featured Project</span>
+      <h2>PrafullTalks — My Personal Blog</h2>
+      <p>A knowledge-sharing blog where I write about technology, software engineering, life lessons, and practical topics.</p>
     </div>
 
     <div class="feature-card reveal">
       <div class="feature-inner">
         <div class="feature-top">
-          <span class="badge">Self-Initiated</span>
-          <span class="badge">AI-Assisted</span>
-          <span class="badge">Runs Daily</span>
-          <span class="badge">OAuth 2.0</span>
-          <span class="badge">GitHub Actions</span>
+          <span class="badge">Personal Project</span>
+          <span class="badge">Weekly Posts</span>
+          <span class="badge">Every Monday</span>
+          <span class="badge">Blogger</span>
         </div>
-        <h3>A fully automated content pipeline — no manual intervention</h3>
+        <h3>Writing and sharing what I learn — one post every Monday</h3>
         <p class="desc">
-          This project combines AI-assisted content generation, automated validation,
-          Blogger API publishing, OAuth 2.0 authentication, image integration,
-          scheduled GitHub Actions workflows, and automated content archiving into a
-          single end-to-end publishing platform.
+          PrafullTalks is my personal blog hosted on Blogger. I started it as an experiment
+          with automated publishing (using GitHub Actions and APIs), but over time I've moved
+          to writing and posting manually every Monday. I find that writing by hand helps me
+          think more clearly about the topics.
         </p>
 
-        <div class="diagram-wrap">
-          <!-- Publishing pipeline diagram (cyclic, self-healing) -->
-          <svg viewBox="0 0 920 300" role="img" aria-labelledby="pubDiagTitle">
-            <title id="pubDiagTitle">Automated publishing pipeline: scheduled trigger to Claude API to validation to Blogger publish to live post, with a self-healing link-audit feedback loop back to validation, and a failure-alert branch.</title>
-            <defs>
-              <marker id="arrowDark" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
-                <path d="M0,0 L6,3 L0,6 Z" class="svg-arrow-dark"></path>
-              </marker>
-              <marker id="arrowDarkAccent" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
-                <path d="M0,0 L6,3 L0,6 Z" class="svg-arrow-dark accent"></path>
-              </marker>
-            </defs>
-
-            <!-- nodes -->
-            <g>
-              <rect x="14" y="40" width="150" height="64" rx="10" class="svg-node-dark"></rect>
-              <text x="89" y="66" text-anchor="middle" class="svg-label-dark" font-size="12.5">Scheduled Trigger</text>
-              <text x="89" y="84" text-anchor="middle" class="svg-sub-dark" font-size="10">GitHub Actions · Cron</text>
-            </g>
-
-            <g>
-              <rect x="212" y="40" width="150" height="64" rx="10" class="svg-node-dark accent"></rect>
-              <text x="287" y="62" text-anchor="middle" class="svg-label-dark" font-size="12.5">Claude API</text>
-              <text x="287" y="78" text-anchor="middle" class="svg-sub-dark" font-size="10">Multi-step prompt</text>
-              <text x="287" y="92" text-anchor="middle" class="svg-sub-dark" font-size="10">+ model fallback</text>
-            </g>
-
-            <g>
-              <rect x="410" y="40" width="150" height="64" rx="10" class="svg-node-dark"></rect>
-              <text x="485" y="62" text-anchor="middle" class="svg-label-dark" font-size="12.5">Validation</text>
-              <text x="485" y="78" text-anchor="middle" class="svg-sub-dark" font-size="10">Dry-run + checks</text>
-              <text x="485" y="92" text-anchor="middle" class="svg-sub-dark" font-size="10">before anything is live</text>
-            </g>
-
-            <g>
-              <rect x="608" y="40" width="150" height="64" rx="10" class="svg-node-dark"></rect>
-              <text x="683" y="62" text-anchor="middle" class="svg-label-dark" font-size="12.5">Blogger API</text>
-              <text x="683" y="78" text-anchor="middle" class="svg-sub-dark" font-size="10">OAuth 2.0 publish</text>
-              <text x="683" y="92" text-anchor="middle" class="svg-sub-dark" font-size="10">refresh-token managed</text>
-            </g>
-
-            <g>
-              <rect x="806" y="40" width="104" height="64" rx="10" class="svg-node-dark accent"></rect>
-              <text x="858" y="66" text-anchor="middle" class="svg-label-dark" font-size="12.5">Live Post</text>
-              <text x="858" y="84" text-anchor="middle" class="svg-sub-dark" font-size="10">public URL</text>
-            </g>
-
-            <g>
-              <rect x="608" y="190" width="150" height="64" rx="10" class="svg-node-dark"></rect>
-              <text x="683" y="212" text-anchor="middle" class="svg-label-dark" font-size="12.5">Link Auditor</text>
-              <text x="683" y="228" text-anchor="middle" class="svg-sub-dark" font-size="10">verifies internal links</text>
-              <text x="683" y="242" text-anchor="middle" class="svg-sub-dark" font-size="10">detects removed posts</text>
-            </g>
-
-            <g>
-              <rect x="410" y="190" width="150" height="64" rx="10" class="svg-node-dark">
-              </rect>
-              <text x="485" y="212" text-anchor="middle" class="svg-label-dark" font-size="12.5">Re-queue Content</text>
-              <text x="485" y="228" text-anchor="middle" class="svg-sub-dark" font-size="10">self-healing repair</text>
-              <text x="485" y="242" text-anchor="middle" class="svg-sub-dark" font-size="10">loop back to validation</text>
-            </g>
-
-            <g>
-              <rect x="212" y="190" width="150" height="64" rx="10" class="svg-node-dark">
-              </rect>
-              <text x="287" y="212" text-anchor="middle" class="svg-label-dark" font-size="12.5">Failure Alert</text>
-              <text x="287" y="228" text-anchor="middle" class="svg-sub-dark" font-size="10">GitHub Actions</text>
-              <text x="287" y="242" text-anchor="middle" class="svg-sub-dark" font-size="10">notifies on any failure</text>
-            </g>
-
-            <!-- forward flow -->
-            <line x1="164" y1="72" x2="205" y2="72" class="svg-line-dark" marker-end="url(#arrowDark)"></line>
-            <line x1="362" y1="72" x2="403" y2="72" class="svg-line-dark accent" marker-end="url(#arrowDarkAccent)"></line>
-            <line x1="560" y1="72" x2="601" y2="72" class="svg-line-dark" marker-end="url(#arrowDark)"></line>
-            <line x1="758" y1="72" x2="799" y2="72" class="svg-line-dark accent" marker-end="url(#arrowDarkAccent)"></line>
-
-            <!-- live post down to auditor -->
-            <path d="M858,104 L858,222 L764,222" class="svg-line-dark" marker-end="url(#arrowDark)"></path>
-            <!-- auditor to requeue -->
-            <line x1="602" y1="222" x2="566" y2="222" class="svg-line-dark accent" marker-end="url(#arrowDarkAccent)"></line>
-            <!-- requeue back up to validation (self-healing loop) -->
-            <path d="M485,190 L485,120" class="svg-line-dark accent" marker-end="url(#arrowDarkAccent)"></path>
-            <!-- validation to failure alert -->
-            <path d="M410,90 L287,190" class="svg-line-dark" marker-end="url(#arrowDark)" stroke-dasharray="4 4"></path>
-
-            <text x="89" y="130" class="svg-sub-dark" font-size="10">daily · unattended</text>
-            <text x="683" y="278" class="svg-sub-dark" font-size="10">self-healing internal linking</text>
-          </svg>
+        <div style="margin:28px 0;padding:20px;background:var(--mono-bg);border-left:4px solid var(--signal);border-radius:10px;">
+          <p style="margin:0;font-size:14px;color:var(--muted);font-style:italic;">
+            <strong>Note:</strong> PrafullTalks originally ran on an automated pipeline I built
+            using Claude API, GitHub Actions, and Blogger API with OAuth 2.0. It was a good
+            learning project — I got hands-on with API integration, CI/CD workflows, and
+            OAuth token management. Now I write and publish manually each week, which gives me
+            more control over quality and topics.
+          </p>
         </div>
 
         <ul class="feature-list">
-          <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"></path><path d="M9.5 12.5l2 2 3-4"></path></svg></span><span><b>AI content generation:</b> integrated the Anthropic Claude API with structured, multi-step prompting and automatic model fallback.</span></li>
-          <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"></rect><path d="M7 11V7a5 5 0 0110 0v4"></path></svg></span><span><b>Publishing automation:</b> integrated the Google Blogger API — OAuth 2.0 with full refresh-token lifecycle management — to publish content programmatically.</span></li>
-          <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l4 4-4 4"></path><path d="M3 11V9a4 4 0 014-4h14"></path><path d="M7 22l-4-4 4-4"></path><path d="M21 13v2a4 4 0 01-4 4H3"></path></svg></span><span><b>Self-healing internal linking:</b> fetches live post data from the API to generate and verify working internal links, and automatically re-queues content if a linked post is later removed.</span></li>
-          <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 3"></path></svg></span><span><b>CI/CD:</b> scheduled and monitored via GitHub Actions, with automatic failure alerts, dry-run testing modes, and validation checks before anything goes live.</span></li>
-          <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v4H4z"></path><path d="M4 12h10M4 16h6"></path></svg></span><span><b>SEO tooling:</b> built diagnostic and bulk-repair scripts — including an automated internal-link auditor — to keep the live site healthy at scale.</span></li>
+          <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"></path><path d="M9.5 12.5l2 2 3-4"></path></svg></span><span><b>50+ articles published</b> on technology, engineering, life lessons, and social topics.</span></li>
+          <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 3"></path></svg></span><span><b>Weekly schedule:</b> new post every Monday — written and published manually.</span></li>
+          <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l4 4-4 4"></path><path d="M3 11V9a4 4 0 014-4h14"></path><path d="M7 22l-4-4 4-4"></path><path d="M21 13v2a4 4 0 01-4 4H3"></path></svg></span><span><b>Previously automated:</b> built an end-to-end pipeline with Claude API, Blogger API (OAuth 2.0), and GitHub Actions — a useful learning experience in API integration and CI/CD.</span></li>
+          <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v4H4z"></path><path d="M4 12h10M4 16h6"></path></svg></span><span><b>Topics covered:</b> enterprise technology, software engineering, productivity, and practical how-to guides.</span></li>
         </ul>
 
         <p class="feature-footnote">
-          Built independently — including debugging real production issues such as OAuth token
-          expiry, third-party API breaking changes, and data-consistency bugs across a
-          multi-service pipeline.
+          Visit <a href="https://www.prafulltalks.com" target="_blank" rel="noopener">prafulltalks.com</a>
+          to read the latest articles.
         </p>
       </div>
     </div>
   </div>
 </section>
 <!-- ============================ WRITING ============================ -->
-
 <section class="writing" id="writing">
-
   <div class="container">
-
     <div class="section-head reveal">
-
-      <span class="eyebrow">Knowledge Sharing</span>
-
+      <span class="eyebrow">// Knowledge Sharing</span>
       <h2>Writing Beyond Code</h2>
-
-      <p>
-
-        I enjoy simplifying complex technology and sharing practical knowledge.
-        Through <strong>PrafullTalks</strong>, I publish articles that make
-        enterprise software, life lessons, and social topics easier to understand.
-
-      </p>
-
+      <p>I enjoy simplifying complex technology and sharing practical knowledge. Through <strong>PrafullTalks</strong>, I publish articles that make enterprise software, life lessons, and social topics easier to understand.</p>
     </div>
-
     <div class="grid cols-2">
-
       <article class="card reveal">
-
         <h3>📚 PrafullTalks</h3>
-
-        <p>
-
-          A personal knowledge platform focused on writing high-quality,
-          easy-to-understand articles.
-
-        </p>
-
+        <p>A personal knowledge platform focused on writing high-quality, easy-to-understand articles.</p>
         <ul style="margin-top:18px;line-height:2;">
-
           <li>Enterprise Technology</li>
-
           <li>Software Engineering</li>
-
           <li>Life Insights</li>
-
           <li>Social Issues</li>
-
           <li>Growing Knowledge Library</li>
-
-          <li>AI-assisted Daily Publishing Workflow</li>
-
+          <li>Weekly Monday Posts</li>
         </ul>
-
         <p style="margin-top:24px;">
-
-          <a class="btn btn-primary"
-             href="https://www.prafulltalks.com"
-             target="_blank"
-             rel="noopener">
-
-             🌐 Visit PrafullTalks
-
-          </a>
-
+          <a class="btn btn-primary" href="https://www.prafulltalks.com" target="_blank" rel="noopener">🌐 Visit PrafullTalks</a>
         </p>
-
       </article>
-
       <article class="card reveal">
-
         <h3>✍️ Why I Write</h3>
-
-        <p>
-
-          Writing helps me organize ideas, explain difficult concepts,
-          and contribute practical knowledge to a wider audience.
-
-        </p>
-
-        <p>
-
-          My goal isn't simply to publish articles—
-          it's to create content that helps developers,
-          students, and everyday readers understand technology
-          without unnecessary jargon.
-
-        </p>
-
+        <p>Writing helps me organize ideas, explain difficult concepts, and contribute practical knowledge to a wider audience.</p>
+        <p>My goal isn't simply to publish articles — it's to create content that helps developers, students, and everyday readers understand technology without unnecessary jargon.</p>
         <div class="tl-tags">
-
           <span class="tag">Technical Writing</span>
-
           <span class="tag">Knowledge Sharing</span>
-
           <span class="tag">Enterprise Tech</span>
-
           <span class="tag">Personal Growth</span>
-
         </div>
-
       </article>
-
     </div>
-
   </div>
-
 </section>
 <!-- ============================ SYSTEMS / ARCHITECTURE ============================ -->
 <section class="architecture" id="systems">
   <div class="container">
     <div class="section-head reveal">
       <span class="eyebrow">// Systems</span>
-      <h2>ASUR migration — architecture</h2>
-      <p>A genuinely sequential pipeline: legacy retail data moves through Oracle SOA Suite and
-        custom transformation logic before it ever reaches a downstream system.</p>
+      <h2>ASUR migration — how it works</h2>
+      <p>A simple overview of the data migration flow I'm currently working on — legacy data through Oracle SOA Suite to the output format.</p>
     </div>
 
     <div class="arch-card reveal">
@@ -1263,8 +1241,8 @@ Visit PrafullTalks →
   <div class="container">
     <div class="section-head reveal">
       <span class="eyebrow">// Skills &amp; Tools</span>
-      <h2>Technical toolkit</h2>
-      <p>Grouped by where each tool actually shows up in the stack — not a flat tag cloud.</p>
+      <h2>What I work with</h2>
+      <p>Tools and technologies I use or have used in my projects.</p>
     </div>
 
     <div class="skills-grid">
@@ -1331,14 +1309,45 @@ Visit PrafullTalks →
   </div>
 </section>
 
+<!-- ============================ TESTIMONIALS (commented out — uncomment when real testimonials are ready) ============================
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">// Testimonials</span>
+      <h2>What people say</h2>
+      <p>Feedback from clients and colleagues I've worked with.</p>
+    </div>
+
+    <div class="testimonial-grid">
+      <div class="testimonial-card reveal">
+        <div class="quote-icon">"</div>
+        <blockquote>Prafull delivered our school website exactly as we envisioned — a complete, professional site with admissions, gallery, and contact features. He handled everything independently, from design to deployment, and it went live faster than we expected.</blockquote>
+        <div class="t-author">SPS International School</div>
+        <div class="t-role">Client · Website Project</div>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="quote-icon">"</div>
+        <blockquote>Working with Prafull on production support has been seamless. His understanding of backend systems, ability to debug under pressure, and clear communication make him a reliable team member on high-priority incidents.</blockquote>
+        <div class="t-author">SkillNet Solutions Team</div>
+        <div class="t-role">Colleague · Production Support</div>
+      </div>
+    </div>
+
+    <p style="text-align:center;margin-top:28px;color:var(--muted);font-size:14px;font-family:var(--font-mono);" class="reveal">
+      More testimonials coming soon
+    </p>
+  </div>
+</section>
+-->
+
 <!-- ============================ STATS ============================ -->
 <section class="stats">
   <div class="container">
     <div class="stats-grid">
       <div class="stat-card reveal"><div class="num"><span class="counter" data-target="8" data-suffix="+">0</span></div><div class="label">Years Experience</div></div>
       <div class="stat-card reveal"><div class="num"><span class="counter" data-target="6">0</span></div><div class="label">Retail Brands Supported</div></div>
-      <div class="stat-card reveal"><div class="num"><span class="counter" data-target="3">0</span></div><div class="label">Support Tiers Owned (L1–L3)</div></div>
-      <div class="stat-card reveal"><div class="num"><span class="counter" data-target="365" data-suffix="/yr">0</span></div><div class="label">Automated Runs · Daily Pipeline</div></div>
+      <div class="stat-card reveal"><div class="num"><span class="counter" data-target="3">0</span></div><div class="label">Support Tiers (L1–L3)</div></div>
+      <div class="stat-card reveal"><div class="num"><span class="counter" data-target="52" data-suffix="/yr">0</span></div><div class="label">Weekly Blog Posts · Every Monday</div></div>
     </div>
   </div>
 </section>
@@ -1349,20 +1358,73 @@ Visit PrafullTalks →
     <div class="contact-card reveal">
       <span class="eyebrow">// Get in touch</span>
       <h2>Let's connect</h2>
-      <p>Open to discussions on backend engineering,enterprise applications,automation,technical writing,or collaboration opportunities.</p>
-      <div class="contact-ctas">
-        <a class="btn btn-primary" href="https://www.linkedin.com/in/prafull-ranjan/" target="_blank" rel="noopener">
-          Connect on LinkedIn
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-        </a>
-        <a class="btn btn-ghost" href="https://www.prafulltalks.com" target="_blank" rel="noopener">
-          Read My Blog — PrafullTalks
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-        </a>
+      <p>Open to discussions on website projects, technical writing, collaboration, or anything else I can help with on my own time.</p>
+
+      <!-- Contact Form (Formsubmit.co — no backend needed) -->
+      <form class="contact-form" action="https://formsubmit.co/prafullranjan@zohomail.in" method="POST">
+        <!-- Formsubmit config -->
+        <input type="hidden" name="_subject" value="New Portfolio Inquiry from Website">
+        <input type="hidden" name="_captcha" value="true">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://wa.me/919942830645?text=Hi%20Prafull%2C%20I%20just%20submitted%20a%20form%20on%20your%20portfolio.%20Looking%20forward%20to%20connecting!">
+        <input type="text" name="_honey" style="display:none">
+
+        <div class="form-row">
+          <label for="cf-name">Your Name</label>
+          <input type="text" id="cf-name" name="name" placeholder="Your good name" required>
+        </div>
+        <div class="form-row">
+          <label for="cf-email">Email Address</label>
+          <input type="email" id="cf-email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-row">
+          <label for="cf-phone">Phone / WhatsApp (optional)</label>
+          <input type="tel" id="cf-phone" name="phone" placeholder="+91 98765 43210">
+        </div>
+        <div class="form-row">
+          <label for="cf-inquiry">Inquiry Type</label>
+          <select id="cf-inquiry" name="inquiry_type" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="Website Project">Website Design &amp; Development</option>
+            <option value="Technical Writing">Technical / Content Writing</option>
+            <option value="Collaboration">Collaboration Opportunity</option>
+            <option value="PrafullTalks">PrafullTalks Related</option>
+            <option value="General">General Inquiry</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" placeholder="Tell me about your project or how I can help..." required></textarea>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn btn-primary" style="padding:14px 36px;font-size:15px;">
+            Send Message ✉️
+          </button>
+        </div>
+      </form>
+
+      <div style="margin-top:32px;border-top:1px solid var(--line);padding-top:28px;">
+        <p style="font-size:14px;color:var(--muted);margin-bottom:18px;">Or reach out directly:</p>
+        <div class="contact-ctas">
+          <a class="btn btn-primary" href="https://wa.me/919942830645?text=Hi%20Prafull%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect%20regarding%20a%20project.%20Let%27s%20talk!" target="_blank" rel="noopener">
+            💬 WhatsApp
+          </a>
+          <a class="btn btn-primary" href="mailto:prafullranjan@zohomail.in">
+            ✉️ Email Me
+          </a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/prafull-ranjan/" target="_blank" rel="noopener">
+            Connect on LinkedIn
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </a>
+          <a class="btn btn-ghost" href="https://www.prafulltalks.com" target="_blank" rel="noopener">
+            Read PrafullTalks ↗
+          </a>
+        </div>
       </div>
+
       <div class="copy-row">
-        <span id="linkedinUrl">linkedin.com/in/prafull-ranjan</span>
-        <button id="copyLinkedin" type="button" aria-label="Copy LinkedIn URL">Copy</button>
+        <span id="linkedinUrl">prafullranjan@zohomail.in</span>
+        <button id="copyLinkedin" type="button" aria-label="Copy email address">Copy</button>
       </div>
     </div>
   </div>
@@ -1373,47 +1435,24 @@ Visit PrafullTalks →
 <footer>
   <div class="container">
     <div class="foot-status">
-
-  <span class="dot" aria-hidden="true"></span>
-
-  © <span id="year"></span> Prafull Ranjan
-
-  &nbsp;•&nbsp;
-
-  <a href="https://www.prafulltalks.com"
-     target="_blank"
-     rel="noopener">
-
-     PrafullTalks
-
-  </a>
-
-  &nbsp;•&nbsp;
-
-  <a href="https://github.com/pr20691"
-     target="_blank"
-     rel="noopener">
-
-     GitHub
-
-  </a>
-
-  &nbsp;•&nbsp;
-
-  <a href="https://www.linkedin.com/in/prafull-ranjan/"
-     target="_blank"
-     rel="noopener">
-
-     LinkedIn
-
-  </a>
-
-</div>
+      <span class="dot" aria-hidden="true"></span>
+      © <span id="year"></span> Prafull Ranjan
+      &nbsp;•&nbsp; <a href="https://www.prafulltalks.com" target="_blank" rel="noopener">PrafullTalks</a>
+      &nbsp;•&nbsp; <a href="https://github.com/pr20691" target="_blank" rel="noopener">GitHub</a>
+      &nbsp;•&nbsp; <a href="https://www.linkedin.com/in/prafull-ranjan/" target="_blank" rel="noopener">LinkedIn</a>
+      &nbsp;•&nbsp; <a href="mailto:prafullranjan@zohomail.in">Email</a>
+      &nbsp;•&nbsp; <a href="https://wa.me/919942830645?text=Hi%20Prafull%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect!" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
     <button class="back-top" id="backTop" aria-label="Back to top">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
     </button>
   </div>
 </footer>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/919942830645?text=Hi%20Prafull%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect!" target="_blank" rel="noopener" class="floating-wa" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
 
 <script>
 (function(){
@@ -1423,11 +1462,13 @@ Visit PrafullTalks →
   /* ---- Year ---- */
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  /* ---- Theme toggle (in-memory only; no storage) ---- */
+  /* ---- Theme toggle (persists choice in localStorage) ---- */
   var root = document.documentElement;
   var themeToggle = document.getElementById('themeToggle');
+  var saved = null;
+  try { saved = localStorage.getItem('theme'); } catch(e){}
   var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  var current = prefersDark ? 'dark' : 'light';
+  var current = saved || (prefersDark ? 'dark' : 'light');
   root.setAttribute('data-theme', current);
   themeToggle.setAttribute('aria-pressed', String(current === 'dark'));
 
@@ -1435,6 +1476,7 @@ Visit PrafullTalks →
     current = current === 'dark' ? 'light' : 'dark';
     root.setAttribute('data-theme', current);
     themeToggle.setAttribute('aria-pressed', String(current === 'dark'));
+    try { localStorage.setItem('theme', current); } catch(e){}
   });
 
   /* ---- Mobile nav ---- */
@@ -1466,7 +1508,7 @@ Visit PrafullTalks →
   /* ---- Copy LinkedIn ---- */
   var copyBtn = document.getElementById('copyLinkedin');
   copyBtn.addEventListener('click', function(){
-    var text = 'https://www.linkedin.com/in/prafull-ranjan/';
+    var text = 'prafullranjan@zohomail.in';
     var done = function(){ copyBtn.textContent = 'Copied!'; setTimeout(function(){ copyBtn.textContent = 'Copy'; }, 1800); };
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(text).then(done).catch(done);
@@ -1520,7 +1562,8 @@ Visit PrafullTalks →
     'Software Engineer · System Analyst',
     'Backend Developer — Java & Spring',
     'Application Support — L1 / L2 / L3',
-    'Automation Builder'
+    'Side Project Builder',
+    'PrafullTalks Blogger'
   ];
   var typedEl = document.getElementById('typedRole');
   if (reduceMotion) {
